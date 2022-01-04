@@ -1,0 +1,96 @@
+/* header */
+.header{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: -4.5%;
+}
+
+.header > button {
+    all: unset;
+    width: 15%;
+    border: 1px solid red;
+}
+
+.header > input[type="search"] {
+    width: 35%;
+    background-color: yellow;
+    border-radius: 50px;
+    height: 40px;
+    margin-top: 0.3%;
+}
+
+.header .nav {
+    display: flex;
+    width: 15%;
+    border: 1px solid red;
+}
+
+/* body */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "sugerencia posts publicidad"
+    "sugerencia posts publicidad"
+    "sugerencia posts publicidad"
+    "sugerencia posts publicidad"
+    "sugerencia posts publicidad"; */
+}
+
+/* sugerencia */
+.sugerencia { 
+    border: 1px solid black;
+    /* grid-area: sugerencia; */
+    width: 15%;
+    text-align: center;
+}
+
+.sugerencia .box  {
+    display: flex;
+    justify-content: center;
+}
+
+.sugerencia .box .boxSugerencia {
+    border: 1px solid red;
+    width: 90%;
+    height: 200px;
+    background: linear-gradient(to top, white 0%, white 40%, #dbc3e4 40%, #dbc3e4 100%);
+}
+
+.sugerencia .box .boxSugerencia > img {
+    margin-top: 20%;
+    border-radius: 50%;
+}
+
+.sugerencia .box .boxSugerencia > button {
+    all: unset;
+    padding: 2px 7px;
+    border-radius: 50px;
+    background-color: #ae78c3;
+    color: white;
+}
+
+/* publicaciones */
+.posts { 
+    border: 1px solid black;
+    /* grid-area: posts; */
+    width: 35%; 
+}
+
+/* publicidad */
+.publicidad { 
+    border: 1px solid black;
+    /* grid-area: publicidad; */
+    width: 15%; 
+    text-align: center;
+}
