@@ -1,38 +1,11 @@
-/* header */
-.header{
-    width: 100%;
-    height: 50px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    margin-top: -4.5%;
-}
+@import url('../generales/variables.css');
 
-.header > button {
-    all: unset;
-    width: 15%;
-    border: 1px solid red;
-}
 
-.header > input[type="search"] {
-    width: 35%;
-    background-color: yellow;
-    border-radius: 50px;
-    height: 40px;
-    margin-top: 0.3%;
-}
-
-.header .nav {
-    display: flex;
-    width: 15%;
-    border: 1px solid red;
-}
 
 /* body */
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 4.5%;
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -49,22 +22,27 @@
 
 /* sugerencia */
 .sugerencia { 
-    border: 1px solid black;
     /* grid-area: sugerencia; */
-    width: 15%;
+    width: 20%;
     text-align: center;
+    border: 1px solid black;
 }
 
 .sugerencia .box  {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .sugerencia .box .boxSugerencia {
-    border: 1px solid red;
     width: 90%;
     height: 200px;
-    background: linear-gradient(to top, white 0%, white 40%, #dbc3e4 40%, #dbc3e4 100%);
+    /* background: linear-gradient(to top, white 0%, white 40%, rgba(166, 111, 166, .4) 40%, rgba(166, 111, 166, .4) 100%); */
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(166, 111, 166, .4) 100%);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    margin-bottom: 15%;
+    height: 220px;
 }
 
 .sugerencia .box .boxSugerencia > img {
@@ -72,25 +50,22 @@
     border-radius: 50%;
 }
 
+/* .sugerencia .box .boxSugerencia > p {
+    margin-top: -0.5%;
+} */
+
 .sugerencia .box .boxSugerencia > button {
     all: unset;
     padding: 2px 7px;
-    border-radius: 50px;
+    border-radius: 5px;
     background-color: #ae78c3;
     color: white;
-}
-
-/* publicaciones */
-.posts { 
-    border: 1px solid black;
-    /* grid-area: posts; */
-    width: 35%; 
 }
 
 /* publicidad */
 .publicidad { 
     border: 1px solid black;
     /* grid-area: publicidad; */
-    width: 15%; 
+    width: 20%; 
     text-align: center;
 }

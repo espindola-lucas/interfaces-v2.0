@@ -1,0 +1,6 @@
+/* publicaciones */
+.posts { 
+    border: 1px solid black;
+    /* grid-area: posts; */
+    width: 40%; 
+}

@@ -1,0 +1,52 @@
+/* header */
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    margin-top: -4.5%;
+    background: #A66FA6;
+    margin-left: -0.4%;
+}
+
+.header > button {
+    all: unset;
+    width: 15%;
+    font-size: 48px;
+    text-align: center;
+    font-family: var(--title-font);
+    cursor: pointer;
+    color: white;
+    margin-top: -0.3%;
+}
+
+.header > input[type="text"] {
+    width: 34%;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 0.5%;
+    border: none;
+    padding: 0px 10px;
+}
+
+.header > input[type="text"]:focus {
+    outline: none;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.header .nav > p > i {
+    color: white;
+    font-size: 28px;
+    margin-top: -20%;
+    cursor: pointer;
+}
+
+.header .nav > p > i:hover {
+    color: rgba(132, 75, 132, 1);
+}
