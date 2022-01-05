@@ -4,3 +4,90 @@
     /* grid-area: posts; */
     width: 40%; 
 }
+
+.posts .crearPublicacion {
+    margin-top: -1%;
+    background-color: rgba(196, 196, 196, .3);
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.posts .crearPublicacion > h1 {
+    font-size: 24px;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.posts .crearPublicacion > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 12%;
+}
+
+.posts .crearPublicacion > p {
+    margin-left: 23%;
+    margin-top: -8%;
+    width: 30%;
+    font-size: 22px;
+    margin-right: 55%;
+}
+
+.posts .crearPublicacion .textoPublicar,
+.posts .crearPublicacion .compartir {
+    display: flex;
+    justify-content: center;
+}
+
+.posts .crearPublicacion .textoPublicar > input[type="text"] {
+    width: 72%;
+    padding: 20px 15px;
+    background-color: rgba(196, 196, 196, .5);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
+.posts .crearPublicacion .textoPublicar > input[type="text"]:focus {
+    outline: none;
+}
+
+.posts .crearPublicacion .textoPublicar > input[type="text"]::placeholder {
+    font-size: 15px;
+}
+
+.posts .crearPublicacion .opcionesPublicar {  
+    width: 45%;
+    margin-left: 12%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "imagen etiquetar";
+}
+
+.posts .crearPublicacion .opcionesPublicar .imagen { 
+    grid-area: imagen; 
+}
+
+.posts .crearPublicacion .opcionesPublicar .etiquetar { 
+    grid-area: etiquetar; 
+}
+
+.posts .crearPublicacion .compartir {
+    width: 75%;
+    margin-left: 12%;
+}
+
+.posts .crearPublicacion .compartir > button {
+    all: unset;
+    border-radius: 50px;
+    text-align: center;
+    background: #844B84;
+    color: white;
+    width: 10%;
+    padding: 5px 15px;
+    margin-left: 88%;
+}
