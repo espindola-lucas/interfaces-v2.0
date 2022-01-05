@@ -1,11 +1,11 @@
-/* publicaciones */
 .posts { 
-    border: 1px solid black;
     /* grid-area: posts; */
     width: 40%; 
 }
 
-.posts .crearPublicacion {
+/* crear publicacion */
+.posts .crearPublicacion,
+.posts .publicaciones {
     margin-top: -1%;
     background-color: rgba(196, 196, 196, .3);
     border-radius: 5px;
@@ -18,28 +18,34 @@
     text-align: center;
 }
 
-.posts .crearPublicacion > img {
+.posts .crearPublicacion > img,
+.posts .publicaciones > img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin-left: 12%;
 }
 
-.posts .crearPublicacion > p {
+.posts .crearPublicacion > h2,
+.posts .publicaciones > h2 {
     margin-left: 23%;
     margin-top: -8%;
     width: 30%;
     font-size: 22px;
     margin-right: 55%;
+    font-weight: lighter;
 }
 
 .posts .crearPublicacion .textoPublicar,
-.posts .crearPublicacion .compartir {
+.posts .crearPublicacion .compartir, 
+.posts .publicaciones .comentar,
+.posts .publicaciones .conteinerImg {
     display: flex;
     justify-content: center;
 }
 
-.posts .crearPublicacion .textoPublicar > input[type="text"] {
+.posts .crearPublicacion .textoPublicar > input[type="text"],
+.posts .publicaciones .comentar > input[type="text"] {
     width: 72%;
     padding: 20px 15px;
     background-color: rgba(196, 196, 196, .5);
@@ -90,4 +96,41 @@
     width: 10%;
     padding: 5px 15px;
     margin-left: 88%;
+}
+
+/* publicaciones */
+.posts .publicaciones {
+    margin-top: 4%;
+}
+
+.posts .publicaciones > p {
+    margin-left: 23%;
+    margin-top: -1%;
+    width: 30%;
+    font-size: 16px;
+    margin-right: 55%;
+    color: rgba(100, 100, 100, 1);
+}
+
+.posts .publicaciones .conteinerImg .post {
+    /* border: 1px solid red; */
+    width: 75%;
+}
+
+.posts .publicaciones .conteinerImg .post > img {
+    width: 100%;
+}
+
+.posts .publicaciones .opciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.posts .publicaciones .comentar > input[type="text"] {
+    width: 72%;
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-bottom: 2%;
 }

@@ -24,7 +24,6 @@
     /* grid-area: sugerencia; */
     width: 20%;
     text-align: center;
-    border: 1px solid black;
 }
 
 .sugerencia > h1,
@@ -75,7 +74,6 @@
 }
 
 .publicidad .boxPublicidad {
-    border: 1px solid rgba(196, 196, 296, 1);
     margin-bottom: 10%;
 }
 
