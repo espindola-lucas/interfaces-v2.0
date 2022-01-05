@@ -27,8 +27,8 @@
     border: 1px solid black;
 }
 
-.sugerencia > p,
-.publicidad > p {
+.sugerencia > h1,
+.publicidad > h1 {
     color: rgba(0, 0, 0, .5);
     font-size: 24px;
     margin-top: 1%;
