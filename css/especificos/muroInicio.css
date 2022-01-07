@@ -54,7 +54,7 @@
     height: 200px;
     /* background: linear-gradient(to top, white 0%, white 40%, rgba(166, 111, 166, .4) 40%, rgba(166, 111, 166, .4) 100%); */
     background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(166, 111, 166, .4) 100%);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     border: 2px solid rgba(255, 255, 255, 0);
     margin-bottom: 15%;
     height: 200px;
@@ -69,7 +69,7 @@
 .sugerencia .box .boxSugerencia > button {
     all: unset;
     padding: 2px 7px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     background-color: #ae78c3;
     color: white;
     margin-top: 5%;

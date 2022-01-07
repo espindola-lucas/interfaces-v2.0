@@ -1,0 +1,122 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font)
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.sessionFlow {
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(137, 88, 137, .9);
+}
+
+.sessionFlow .logo {
+    width: 50%;
+}
+
+.sessionFlow .logo > img {
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+.sessionFlow .logo > h1 {
+    font-family: var(--title-font);
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+}
+
+.sessionFlow .cuadroForm {
+    width: 50%;
+}
+
+.sessionFlow .cuadroForm .formulario {
+    width: 400px;
+    height: 550px;
+    margin-top: 13%;
+    background-color: white;
+}
+
+.sessionFlow .cuadroForm .formulario > h1 {
+    text-align: center;
+    /* margin-top: 20%; */
+}
+
+.sessionFlow .cuadroForm .formulario .register {
+    margin-top: 0% !important;
+}
+
+.sessionFlow .cuadroForm .formulario > form {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+.sessionFlow .cuadroForm .formulario > form > input {
+    background-color: rgba(196, 196, 196, .5);
+    border: none;
+    padding: 10px 5px;
+    width: 97%;
+}
+
+.sessionFlow .cuadroForm .formulario > form .input1 {
+    margin-bottom: 10%;
+}
+
+.sessionFlow .cuadroForm .formulario > form .input2 {
+    margin-bottom: 7%;
+}
+
+.sessionFlow .cuadroForm .formulario > form > input:focus {
+    outline: none;
+}
+
+.sessionFlow .cuadroForm .formulario > form > input::placeholder {
+    color: rgba(0, 0, 0, .7);
+}
+
+.sessionFlow .cuadroForm .formulario .login,
+.sessionFlow .cuadroForm .formulario .crearCuenta {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 30%;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding: 10px 20px;
+}
+
+.sessionFlow .cuadroForm .formulario > p {
+    text-align: center;
+    font-size: 12px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.sessionFlow .cuadroForm .formulario > hr {
+    width: 90%;
+    margin-top: 5%;
+}
+
+.sessionFlow .cuadroForm .formulario > a {
+    all: unset;
+}
+
+.sessionFlow .cuadroForm .formulario > a .crearCuenta {
+    background-color: var(--secondary-color);
+    margin-top: 0%;
+}
