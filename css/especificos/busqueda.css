@@ -1,0 +1,101 @@
+@import url('../generales/variables.css');
+
+.container .busqueda {
+    width: 35%;
+}
+
+.container .busqueda > h1 {
+    text-align: center;
+    margin: 0%;
+}
+
+.resultado {  
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "resultado1 resultado2"
+    "resultado3 resultado4";
+}
+
+.boxResultado1 { 
+    grid-area: resultado1;
+    background-color: rgba(229, 229, 229, 1);
+    height: 70px;
+    padding: 5%;
+}
+
+.boxResultado1:hover {
+    box-shadow: 5px 5px 10px rgba(196, 196, 196, 1);
+}
+
+.boxResultado2 { 
+    grid-area: resultado2;
+    background-color: rgba(229, 229, 229, 1);
+    height: 70px;
+    padding: 5%;
+}
+
+.boxResultado2:hover {
+    box-shadow: 5px 5px 10px rgba(196, 196, 196, 1);
+}
+
+.boxResultado3 { 
+    grid-area: resultado3;
+    background-color: rgba(229, 229, 229, 1);
+    height: 70px;
+    padding: 5%;
+}
+
+.boxResultado3:hover {
+    box-shadow: 5px 5px 10px rgba(196, 196, 196, 1);
+}
+
+.boxResultado4 { 
+    grid-area: resultado4;
+    background-color: rgba(229, 229, 229, 1);
+    height: 70px;
+    padding: 5%;
+}
+
+.boxResultado4:hover {
+    box-shadow: 5px 5px 10px rgba(196, 196, 196, 1);
+}
+
+.container .busqueda .resultado .boxResultado1 > img,
+.container .busqueda .resultado .boxResultado2 > img,
+.container .busqueda .resultado .boxResultado3 > img,
+.container .busqueda .resultado .boxResultado4 > img {
+    border-radius: 50%;
+    /* margin-left: 5%; */
+}
+
+.container .busqueda .resultado .boxResultado1 .nombre,
+.container .busqueda .resultado .boxResultado2 .nombre,
+.container .busqueda .resultado .boxResultado3 .nombre,
+.container .busqueda .resultado .boxResultado4 .nombre {
+    margin-left: 30%;
+    margin-top: -22%;
+}
+
+.container .busqueda .resultado .boxResultado1 .nombre > span,
+.container .busqueda .resultado .boxResultado2 .nombre > span,
+.container .busqueda .resultado .boxResultado3 .nombre > span,
+.container .busqueda .resultado .boxResultado4 .nombre > span {
+    margin-left: 15%;
+    margin-top: -17%;
+    cursor: pointer;
+}
+
+.container .busqueda .resultado .boxResultado1 .amigos,
+.container .busqueda .resultado .boxResultado2 .amigos,
+.container .busqueda .resultado .boxResultado3 .amigos,
+.container .busqueda .resultado .boxResultado4 .amigos {
+    margin-left: 30%;
+    margin-top: -1%;
+    font-size: 12px;    
+    color: rgba(0, 0, 0, .5);
+}
