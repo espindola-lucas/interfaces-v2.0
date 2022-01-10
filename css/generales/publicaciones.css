@@ -159,6 +159,15 @@
     font-size: 14px;
 }
 
+.posts .publicaciones .opciones > p {
+    cursor: pointer;
+}
+
+.posts .publicaciones .opciones > a {
+    text-decoration: none;
+    color: black;
+}
+
 .posts .publicaciones .comentar > input[type="text"] {
     width: 85%;
     padding: 5px 15px;

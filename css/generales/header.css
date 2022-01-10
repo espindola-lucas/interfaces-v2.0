@@ -47,7 +47,8 @@
     margin-right: 1%;
 }
 
-.header .nav > p > i {
+.header .nav > p > i,
+.header .nav > a > p > i {
     color: white;
     font-size: 28px;
     cursor: pointer;
