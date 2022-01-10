@@ -1,0 +1,28 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font)
+}
+
+.gridAmigos .amigo {
+    width: 91%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    margin-top: 2%;
+}
+
+.gridAmigos .amigo .boxAmigo {
+    display: flex;
+    width: 250px;
+}
+
+.gridAmigos .amigo .boxAmigo > img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.gridAmigos .amigo .boxAmigo > p {
+    margin-top: 15%;
+    margin-left: 2%;
+}
