@@ -168,6 +168,28 @@
     color: black;
 }
 
+.posts .publicaciones .comentarios {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 5%;
+    background: rgba(196, 196, 196, .5);
+    border-radius: var(--border-radius);
+    margin-bottom: 3%;
+    padding: 5px 0px;
+}
+
+.posts .publicaciones .comentarios > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.posts .publicaciones .comentarios .textoComentario {
+    width: 85%;
+    font-size: 14px;
+}
+
 .posts .publicaciones .comentar > input[type="text"] {
     width: 85%;
     padding: 5px 15px;
