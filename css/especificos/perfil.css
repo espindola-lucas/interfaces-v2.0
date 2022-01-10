@@ -1,0 +1,76 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font)
+}
+
+.header {
+    margin-top: -4.5%;
+}
+
+.containerPerfil {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.containerPerfil .informacion {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerPerfil .informacion .gridInformacion,
+.containerPerfil .informacion .posts {
+    width: 45%;
+}
+
+.containerPerfil .informacion .gridInformacion .fotos,
+.containerPerfil .informacion .gridInformacion .amigos {
+    margin-left: 15%;
+}
+
+.containerPerfil .informacion .gridInformacion > h3 {
+    text-align: center;
+}
+
+.containerPerfil .informacion .gridInformacion .segundoh3 {
+    margin-top: 10%;
+}
+
+.containerPerfil .informacion .gridInformacion .amigos {
+    margin-top: 4%;
+}
+
+.containerPerfil .informacion .gridInformacion .fotos,
+.containerPerfil .informacion .gridInformacion .amigos {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.containerPerfil .informacion .gridInformacion .fotos > img {
+    width: 130px;
+}
+
+.containerPerfil .informacion .gridInformacion .amigos .boxAmigo > img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.containerPerfil .informacion .gridInformacion .amigos .boxAmigo > p {
+    font-size: 14px;
+}
+
+.containerPerfil .informacion .gridInformacion > a {
+    text-decoration: none;
+}
+
+.containerPerfil .informacion .gridInformacion > a > h5 {
+    width: 65%;
+    margin-left: 15%;
+    text-align: right;
+    color: var(--primary-color);
+    cursor: pointer;
+}
