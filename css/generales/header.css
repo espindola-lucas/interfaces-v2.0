@@ -54,6 +54,6 @@
     cursor: pointer;
 }
 
-.header .nav > p > i:hover {
+.header .nav > a > p > i:hover {
     color: rgba(132, 75, 132, 1);
 }

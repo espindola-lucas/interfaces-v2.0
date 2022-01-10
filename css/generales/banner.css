@@ -1,0 +1,31 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font);
+}
+
+.banner {
+    margin-top: 4.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .boxBanner {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 20px 0px;
+}
+
+.banner .boxBanner .nombre > img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.banner .boxBanner > p {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10%;
+}
