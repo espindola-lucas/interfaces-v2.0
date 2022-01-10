@@ -4,22 +4,26 @@
     font-family: var(--text-font)
 }
 
-.gridFotos {
+.gridFotos,
+.gridAmigos {
     margin-left: 8%;
 }
 
-.gridFotos .nav {
+.gridFotos .nav,
+.gridAmigos .nav {
     width: 48%;
     display: flex;
     justify-content: space-between;
 }
 
-.gridFotos .nav > a {
+.gridFotos .nav > a,
+.gridAmigos .nav > a {
     color: black;
     text-decoration: none;
 }
 
-.gridFotos .linea {
+.gridFotos .linea,
+.gridAmigos .linea {
     border: 1px solid var(--light-color);
     width: 91%;
 }
