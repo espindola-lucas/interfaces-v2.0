@@ -1,0 +1,114 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font);
+}
+
+.header {
+    margin-top: -3.1%;
+}
+
+.container {
+    margin-top: 3.1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .listaDeChats > h3,
+.container .seleccionarChat > h1,
+.container .solicitudMensajes > h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, .7);
+}
+
+/* lista de chats */
+.container .listaDeChats,
+.container .solicitudMensajes {
+    width: 20%;
+    border-radius: var(--border-radius);
+}
+
+.container .listaDeChats .boxMensaje,
+.container .solicitudMensajes .boxMensaje {
+    display: flex;
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+
+.container .listaDeChats .boxMensaje:hover,
+.container .solicitudMensajes .boxMensaje:hover {
+    border-radius: var(--border-radius);
+    background: var(--light-color);
+}
+
+.container .listaDeChats .boxMensaje > img,
+.container .solicitudMensajes .boxMensaje > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+
+.container .listaDeChats .boxMensaje .mensaje > p,
+.container .solicitudMensajes .boxMensaje .mensaje > p {
+    font-size: 14px;
+    margin-left: 2%;
+}
+
+.container .listaDeChats .boxMensaje .mensaje .truncate {
+    white-space: nowrap;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .listaDeChats .boxMensaje .mensaje .hora {
+    margin-left: 78%;
+    margin-top: -9%;
+}
+
+.container .listaDeChats .linea,
+.container  .solicitudMensajes .linea {
+    border: 1px solid var(--light-color);
+}
+
+/* seleccionar chat */
+.container .seleccionarChat {
+    width: 60%;
+    background: var(--light-color);
+}
+
+.container .seleccionarChat > h1 {
+    margin-top: 25%;
+}
+
+/* solicitud de mensaje */
+.container .solicitudMensajes .boxMensaje {
+    cursor: default;
+}
+
+.container .solicitudMensajes .boxMensaje .mensaje {
+    width: 90%;
+}
+
+.container .solicitudMensajes .boxMensaje .mensaje .truncate {
+    width: 90%;
+}
+
+.container .solicitudMensajes .boxMensaje .mensaje .hora {
+    width: 40%;
+    margin-left: 60%;
+    margin-top: -9%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .solicitudMensajes .boxMensaje .mensaje .hora .fa-check {
+    cursor: pointer;
+    color: green;
+}
+
+.container .solicitudMensajes .boxMensaje .mensaje .hora .fa-times {
+    color: red;
+    cursor: pointer;
+}
