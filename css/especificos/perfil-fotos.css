@@ -1,0 +1,72 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font)
+}
+
+.gridFotos {
+    margin-left: 8%;
+}
+
+.gridFotos .nav {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gridFotos .nav > a {
+    color: black;
+    text-decoration: none;
+}
+
+.gridFotos .linea {
+    border: 1px solid var(--light-color);
+    width: 91%;
+}
+
+.gridFotos .albunes {
+    width: 91%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gridFotos .albunes .album {
+    width: 10%;
+}
+
+.gridFotos .albunes .album > img {
+    width: 150px;
+}
+
+.gridFotos .albunes .album > p {
+    text-align: center;
+}
+
+.gridFotos .dentroAlbum .fotosAlbum {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 80%;
+    margin-left: 8%;
+}
+
+.gridFotos .dentroAlbum .fotosAlbum > img {
+    width: 120px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.gridFotos .dentroAlbum .fotosAlbum > img:hover{
+    animation: scale-up-image 1s forwards;
+}
+
+@keyframes scale-up-image {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
