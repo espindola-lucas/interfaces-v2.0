@@ -1,0 +1,72 @@
+body {
+    overflow: hidden;
+}
+
+.header {
+    z-index: 1;
+}
+
+.compartirPublicacion {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(196, 196, 196, .6);
+    margin-top: -1.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.compartirPublicacion .boxCompartir {
+    width: 30%;
+    height: 65%;
+    border-radius: var(--border-radius);
+    margin-top: 1.5%;
+    background: white;
+}
+
+.compartirPublicacion .boxCompartir > h1 {
+    text-align: center;
+}
+
+.compartirPublicacion .boxCompartir .box .items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.compartirPublicacion .boxCompartir .boxAmigo {
+    display: flex;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+
+.compartirPublicacion .boxCompartir .boxAmigo:hover {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+}
+
+.compartirPublicacion .boxCompartir .boxAmigo > img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 10%;
+}
+
+.compartirPublicacion .boxCompartir .boxAmigo .nombre {
+    width: 100%;
+}
+
+.compartirPublicacion .boxCompartir .boxAmigo .nombre > p {
+    margin-left: 5%;
+}
+
+.compartirPublicacion .boxCompartir .box .items > button {
+    all: unset;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    width: 20%;
+    text-align: center;
+    padding: 5px 0px;
+    cursor: pointer;
+}
