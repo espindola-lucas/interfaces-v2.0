@@ -1,0 +1,97 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font)
+}
+
+.container .seleccionarChat {
+    display: flex;
+    justify-content: center;
+}
+
+.container .seleccionarChat .chatAbierto {
+    width: 95%;
+    height: 800px;
+    margin-top: 2%;
+    background: white;
+    border-radius: var(--border-radius);
+}
+
+.container .seleccionarChat .chatAbierto .headerChat {
+    height: 70px;
+    margin-top: -0%;
+    box-shadow: 0px 5px 10px rgba(196, 196, 196, 1);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .seleccionarChat .chatAbierto .headerChat .persona {
+    width: 50%;
+    display: flex;
+}
+
+.container .seleccionarChat .chatAbierto .headerChat .persona > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.container .seleccionarChat .chatAbierto .headerChat .persona > h3 {
+    margin-left: 2%;
+}
+
+.container .seleccionarChat .chatAbierto .headerChat .opciones > i {
+    font-size: 36px;
+    margin-top: 40%;
+    margin-left: -40%;
+}
+
+.container .seleccionarChat .chatAbierto .recibido {
+    display: flex;
+    width: 55%;
+    margin-bottom: 1%;
+}
+
+.container .seleccionarChat .chatAbierto .recibido > img,
+.container .seleccionarChat .chatAbierto .enviado > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container .seleccionarChat .chatAbierto .recibido > p {
+    margin-left: 1%;
+    font-size: 14px;
+}
+
+.container .seleccionarChat .chatAbierto .enviado {
+    display: flex;
+    width: 55%;
+    float: right;
+    margin-bottom: 1%;
+}
+
+.container .seleccionarChat .chatAbierto .escribirMensaje {
+    border-top: 1px solid black;
+    height: 70px;
+    margin-top: 12%;
+}
+
+.container .seleccionarChat .chatAbierto .escribirMensaje > input[type="text"] {
+    width: 90%;
+    height: 60px;
+    padding: 0px 50px;
+    border: none;
+}
+
+.container .seleccionarChat .chatAbierto .escribirMensaje > input[type="text"]:focus {
+    outline: none;
+    font-size: 14px;
+}
+
+.container .seleccionarChat .chatAbierto .escribirMensaje > input[type="text"]::placeholder{
+    font-size: 14px;
+}
