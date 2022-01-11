@@ -23,4 +23,22 @@ function like1() {
         let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
            document.getElementById("P5").innerHTML =   span   +  302 ;
     }
+
+    function changeicon (){
+        document.getElementById("icono").className = "fas fa-user-clock";
+    }
+    function changeicon1(){
+        document.getElementById("icono1").className = "fas fa-user-clock";
+    }
+    
+    function changeicon2(){
+        document.getElementById("icono2").className = "fas fa-user-clock";
+    }
+    function changeicon3(){
+        document.getElementById("icono3").className = "fas fa-user-clock";
+    }
+    
+    function changeicon4 (){
+        document.getElementById("icono4").className = "fas fa-user-clock";
+    }
     
