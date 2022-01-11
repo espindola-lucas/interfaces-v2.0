@@ -4,6 +4,10 @@
     font-family: var(--text-font);
 }
 
+body {
+    overflow: hidden;
+}
+
 .header {
     margin-top: -3.1%;
 }
