@@ -59,4 +59,10 @@ function like1() {
         
     }
 
+    function Publicar (){
+        document.getElementById('Publicacion-ahora').style.display='block';
+        document.getElementById("placeholder").value = "Escribe una publicación...";
+        // document.getElementById('notificacion').style.marginTop='-101%';
+    }
+
     
