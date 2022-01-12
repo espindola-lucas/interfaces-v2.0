@@ -60,7 +60,7 @@ body {
     margin-left: 5%;
 }
 
-.compartirPublicacion .boxCompartir .box .items > button {
+.compartirPublicacion .boxCompartir .box .items > a {
     all: unset;
     background: var(--primary-color);
     color: white;

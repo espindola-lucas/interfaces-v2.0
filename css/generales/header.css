@@ -16,7 +16,7 @@
     margin-left: -0.4%;
 }
 
-.header > button {
+.header > a {
     all: unset;
     width: 15%;
     font-size: 48px;
