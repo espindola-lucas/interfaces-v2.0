@@ -1,27 +1,26 @@
 function like1() {
     let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
-        document.getElementById("P1").innerHTML =   span   +  665 ;
-    
+        document.getElementById("P1").innerHTML = span + 665;
     }
     
     function like2() {
         let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
-            document.getElementById("P2").innerHTML =   span   +  11 ;
+            document.getElementById("P2").innerHTML = span + 11;
     }
     
     function like3() {
         let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
-           document.getElementById("P3").innerHTML =   span   +  3 ;
+            document.getElementById("P3").innerHTML = span + 3;
     }
     
     function like4() {
         let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
-           document.getElementById("P4").innerHTML =   span   +  91 ;
+            document.getElementById("P4").innerHTML = span + 91;
     }
     
     function like5() {
         let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
-           document.getElementById("P5").innerHTML =   span   +  302 ;
+            document.getElementById("P5").innerHTML = span +  302;
     }
 
     function changeicon (){
@@ -41,6 +40,7 @@ function like1() {
     function changeicon4 (){
         document.getElementById("icono4").className = "fas fa-user-clock";
     }
+
     let click = 'si';
 
     function MostrarNotificaciones (){
@@ -75,8 +75,8 @@ function like1() {
             document.getElementById('Ver-comentario1').style.display='none';
             return ver1 = 'si';
         }
-        
     }
+
     let ver2 = 'si';
     function  VerComentario2 (){
         if (ver2 == 'si'){
@@ -87,8 +87,8 @@ function like1() {
             document.getElementById('Ver-comentario2').style.display='none';
             return ver2 = 'si';
         }
-        
     }
+
     let ver3 = 'si';
     function  VerComentario3 (){
         if (ver3 == 'si'){
@@ -99,7 +99,6 @@ function like1() {
             document.getElementById('Ver-comentario3').style.display='none';
             return ver3 = 'si';
         }
-        
     }
 
     let ver4 = 'si';
@@ -112,7 +111,6 @@ function like1() {
             document.getElementById('Ver-comentario4').style.display='none';
             return ver4 = 'si';
         }
-        
     }
 
     let ver5 = 'si';
@@ -125,12 +123,6 @@ function like1() {
             document.getElementById('Ver-comentario5').style.display='none';
             return ver5 = 'si';
         }
-        
-    }
-
-
-    function AgregarComentario1(){
-
     }
 
     function AgregarComentario2(){
