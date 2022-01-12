@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+   background: url(../../images/F.png);
+   animation: moveBackground 70s linear infinite; 
 }
 
 .sessionFlow {
@@ -119,4 +121,27 @@ body {
 .sessionFlow .cuadroForm .formulario > a .crearCuenta {
     background-color: var(--secondary-color);
     margin-top: 0%;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.paralax{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: url(../../images/FF.png);
+    animation: moveBackground 85s linear infinite; 
+}
+
+@keyframes moveBackground {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -1920px;
+    }
 }
