@@ -9,8 +9,8 @@
     border-radius: var(--border-radius); 
     position: absolute; 
     box-shadow: 5px 5px 10px gray;
-    display: none;
-    position: fixed;
+     display: none;  
+    position: fixed; 
     text-align: center;
     overflow: scroll;
 }
