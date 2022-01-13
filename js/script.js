@@ -125,10 +125,62 @@ function like1() {
         }
     }
 
+    function AgregarComentario1(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('comentario-nuevo1').style.display='flex';
+                document.getElementById("input-comentario").value = "Agregar un comentario...";
+                document.getElementById("input-comentario").placeholder = "Agregar un comentario...";
+                document.getElementById('Ver-comentario1').style.display='block';
+            return   ver1 = 'no';
+            }
+        });
+    }
+
     function AgregarComentario2(){
         document.addEventListener('keypress', function keypress(e){
             if (e.keyCode == '13'){
-                document.getElementById('comentario-nuevo2').style.display='block';
+                document.getElementById('comentario-nuevo2').style.display='flex';
+                document.getElementById("input-comentario2").value = "Agregar un comentario...";
+                document.getElementById("input-comentario2").placeholder = "Agregar un comentario...";
+                document.getElementById('Ver-comentario2').style.display='block';
+            return   ver2 = 'no';
+            }
+        });
+    }
+
+    function AgregarComentario3(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('comentario-nuevo3').style.display='flex';
+                document.getElementById("input-comentario3").value = "Agregar un comentario...";
+                document.getElementById("input-comentario3").placeholder = "Agregar un comentario...";
+                document.getElementById('Ver-comentario3').style.display='block';
+            return   ver3 = 'no';
+            }
+        });
+    }
+
+    function AgregarComentario4(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('comentario-nuevo4').style.display='flex';
+                document.getElementById("input-comentario4").value = "Agregar un comentario...";
+                document.getElementById("input-comentario4").placeholder = "Agregar un comentario...";
+                document.getElementById('Ver-comentario4').style.display='block';
+            return   ver4 = 'no';
+            }
+        });
+    }
+
+    function AgregarComentario5(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('comentario-nuevo5').style.display='flex';
+                document.getElementById("input-comentario5").value = "Agregar un comentario...";
+                document.getElementById("input-comentario5").placeholder = "Agregar un comentario...";
+                document.getElementById('Ver-comentario5').style.display='block';
+            return   ver5 = 'no';
             }
         });
     }
