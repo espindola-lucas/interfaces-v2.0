@@ -1,0 +1,101 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font)
+}
+
+.publicidad > h1 {
+    margin-top: 4.5%;
+    text-align: center;
+}
+
+.publicidad > p{
+    text-align: center;
+}
+
+.publicidad .prioridades {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+.publicidad .prioridades .baja,
+.publicidad .prioridades .media,
+.publicidad .prioridades .alta {
+    width: 15%;
+}
+
+.publicidad .prioridades .baja > h3,
+.publicidad .prioridades .media > h3,
+.publicidad .prioridades .alta > h3,
+.publicidad .prioridades .baja > p,
+.publicidad .prioridades .media > p,
+.publicidad .prioridades .alta > p {
+    text-align: center;
+}
+
+.publicidad .datos {
+    display: flex;  
+    justify-content: space-evenly;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+.publicidad .datos .datosPublicidad > h3,
+.publicidad .datos .datosPago > h3 {
+    text-align: center;
+}
+
+.publicidad .datos .datosPublicidad > form > input,
+.publicidad .datos .datosPago > form > input {
+    margin-bottom: 5%;
+} 
+
+.publicidad > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.publicidad > a > button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.publicidad > a > button:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+.publicidad > a > button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.publicidad > a > button:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}

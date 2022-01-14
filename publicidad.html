@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/generales/loader.css"> -->
+    <link rel="stylesheet" href="css/generales/header.css">
+    <link rel="stylesheet" href="css/especificos/publicidad.css">
+    <link rel="stylesheet" href="css/generales/notificaciones.css">
+    <script src="https://kit.fontawesome.com/616b98738f.js" crossorigin="anonymous"></script>
+    <title>SocialPet</title>
+</head>
+<body>
+    <!-- ring de cargad -->
+    <div class="ring">
+        <div class="loader"></div>
+    </div>
+
+    <!-- header -->
+    <div class="header">
+        <a href="muroInicio.html">SocialPet</a>
+        <input id="input-buscar" type="text" onclick="BuscarAmigo()"placeholder="Buscar Amigos...">
+        <div class="nav">
+            <p onclick="MostrarNotificaciones()"><i id="campana"class="fas fa-bell"></i></p>
+            <p><i class="fas fa-home"></i></p>
+            <a href="perfil.html">
+                <p><i class="fas fa-user-circle"></i></p>
+            </a>
+            <a href="mensajes.html">
+                <p><i class="fas fa-comments"></i></p>
+            </a>
+            <a href="index.html">
+                <p><i class="fas fa-sign-out-alt"></i></p>
+            </a>
+        </div>
+    </div>
+
+    <section class="publicidad">
+        <h1>
+            Sistema de publicidad
+        </h1>
+
+        <p>
+            En <strong>SocialPet</strong> la publicidad se muestra aleatoreamente dependiendo de la prioridad que tengas.
+        </p>
+
+        <div class="prioridades">
+            <div class="baja">
+                <h3>Prioridad Baja</h3>
+                <p>
+                    La publicidad aparecera ultima en la fila.
+                </p>
+                <p>
+                    Precio: $500
+                </p>
+            </div>
+
+            <div class="media">
+                <h3>Prioridad Media</h3>
+                <p>
+                    La publicidad aparecera en el medio de la fila.
+                </p>
+                <p>
+                    Precio: $1000
+                </p>
+            </div>
+
+            <div class="alta">
+                <h3>Prioridad Alta</h3>
+                <p>
+                    La publicidad aparecera primera en la fila.
+                </p>
+                <p>
+                    Precio: $1500
+                </p>
+            </div>
+        </div>
+
+        <div class="datos">
+            <div class="datosPublicidad">
+                <h3>Datos de publicidad</h3>
+                <form>
+                    <label>Nombre de empresa/emprendimiento</label><br>
+                    <input type="text" placeholder="Ingrese el nombre"><br>
+                    <label>Nombre del Responsable</label><br>
+                    <input type="text" placeholder="Ingrese el nombre "><br>
+                    <label>Adjuntar imagen de la publicidad</label><br>
+                    <input type="file"><br>
+                    <label">Link a pagina de contacto</Link> </label><br>
+                    <input type="text" placeholder="Ingrese el link "><br>
+                </form>
+            </div>
+
+            <div class="datosPago">
+                <h3>Datos de pago</h3>
+                <form>
+                    <label>Elija su tarjeta: </label><br>
+                    <input type="checkbox">
+                    <label>Visa</label>
+                    <input type="checkbox">
+                    <label>MasterCard</label>
+                    <input type="checkbox">
+                    <label>Credicoop</label><br>
+                    <label>Nombre y Apellido</label><br>
+                    <input type="text" placeholder="Nombre y Apellido"><br>
+                    <label>Numero de la tarjeta</label><br>
+                    <input type="text" placeholder="Ingrese numero de tarjeta"><br>
+                    <label>Vencimiento</label><br>
+                    <input type="text" placeholder="Ingrese MM/AA"><br>
+                    <label>Codigo de seguridad</label><br>
+                    <input type="text" placeholder="Ingrese codigo de seguridad"><br>
+                </form>
+            </div>
+        </div>
+
+        <a href="muroInicio.html">
+            <button>
+                Enviar datos
+            </button>
+        </a>
+    </section>
+</body>
+<script src="js/script.js"></script>
+<script src="js/Buscar.js"></script>
+</html>
