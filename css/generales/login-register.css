@@ -4,14 +4,6 @@
     font-family: var(--text-font)
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-   background: url(../../images/F.png);
-   animation: moveBackground 70s linear infinite; 
-}
-
 .sessionFlow {
     width: 1000px;
     height: 700px;
@@ -122,11 +114,13 @@ body {
     background-color: var(--secondary-color);
     margin-top: 0%;
 }
+
 .form {
     display: flex;
     justify-content: center;
     margin-top: 5%;
 }
+
 .paralax{
     position:absolute;
     top:0;
@@ -137,11 +131,90 @@ body {
     animation: moveBackground 85s linear infinite; 
 }
 
+/* Responsive mobile */
+
+.loginMobile {
+    display: none;
+}
+
 @keyframes moveBackground {
     0%{
         background-position: 0px;
     }
     100%{
         background-position: -1920px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .paralax{
+        display: none;
+    }
+
+    .loginMobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .loginMobile .responsive {
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .loginMobile .responsive .logoMobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .loginMobile .responsive .logoMobile > img {
+        width: 200px;
+    }
+
+    .loginMobile .responsive > h1 {
+        text-align: center;
+        font-family: var(--title-font);
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+    }
+
+    .loginMobile .responsive > form > input {
+        margin-bottom: 5%;
+        background-color: rgba(196, 196, 196, .6);
+        border: none;
+        padding: 10px 5px;
+        width: 97%;
+    }
+
+    .loginMobile .responsive > form > a {
+        all: unset;
+    }
+
+    .loginMobile .responsive > a .login,
+    .loginMobile .responsive > a .crearCuenta {
+        all: unset;
+        text-align: center;
+        background-color: var(--primary-color);
+        width: 50%;
+        border-radius: 50px;
+        color: white;
+        font-weight: bold;
+        margin-left: 20%;
+        margin-top: 4%;
+        padding: 10px 20px;
+    }
+
+    .loginMobile .responsive > a .crearCuenta {
+        background-color: var(--secondary-color);
+    }
+
+    .loginMobile .responsive > hr {
+        width: 85%;
+    }
+
+    .loginMobile .responsive > p {
+        text-align: center;
+        font-size: 12px;
+        color: var(--primary-color);
     }
 }
