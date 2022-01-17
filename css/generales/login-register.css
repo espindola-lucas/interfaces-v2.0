@@ -128,9 +128,17 @@
     bottom:0;
     right:0;
     background: url(../../images/FF.png);
-    animation: moveBackground 85s linear infinite; 
+    animation: moveBackground 85s linear infinite;  
 }
-
+.conteiner-paralax{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: url(../../images/F.png);
+    animation: moveBackground 70s linear infinite;  
+}
 /* Responsive mobile */
 
 .loginMobile {
