@@ -145,4 +145,86 @@
     .container {
         display: none;
     }
+
+    /* segurencias de amistad */
+
+    .containerSugerenciasMobile {
+        /* width: 90%; */
+        /* margin-left: 5%; */
+        display: flex;
+        /* justify-content: center; */
+        margin-top: -10%;
+    }
+
+    .containerSugerenciasMobile .sugerenciasMobile {
+        display: flex;
+        overflow-y: scroll;
+    }
+
+    .containerSugerenciasMobile .sugerenciasMobile .boxMobile {
+        margin-right: 5%;
+    }
+
+    .containerSugerenciasMobile .sugerenciasMobile .boxMobile .boxSugerenciaMobile {
+        background: linear-gradient(to top, white 0%, white 50%, rgba(166, 111, 166, .4) 50%, rgba(166, 111, 166, .4) 100%);
+        border-radius: var(--border-radius);
+        font-size: 14px;
+        border-bottom: 1px solid var(--primary-color);
+        width: 150px;
+        min-width: 150px;
+        height: 170px;
+        max-height: 170px;
+    }
+
+    .containerSugerenciasMobile .sugerenciasMobile .boxMobile .boxSugerenciaMobile > img {
+        margin-top: 20%;
+        border-radius: 50%;
+        margin-bottom: 5%;
+        margin-left: 30%;
+    }
+
+    .containerSugerenciasMobile .sugerenciasMobile .boxMobile .boxSugerenciaMobile > p {
+        text-align: center;
+        margin-top: -2%;
+    }
+
+    .containerSugerenciasMobile .sugerenciasMobile .boxMobile .boxSugerenciaMobile > button {
+        margin-left: 20%;
+        /* all: unset; */
+        padding: 2px 7px;
+        border-radius: var(--border-radius);
+        background-color: #ae78c3;
+        color: white;
+        border: none;
+    }
+
+    .containerMobile .group {
+        margin-top: -25%;
+    }
+
+    .containerPublicidadMobile {
+        display: flex;
+        overflow-y: scroll;
+        border-top: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+        margin-top: -10%;
+        padding: 15px 0px;
+    }
+
+    .containerPublicidadMobile > img {
+        width: 150px;
+        height: 150px;
+        border-left: 1px solid var(--primary-color);
+        border-right: 1px solid var(--primary-color);
+        margin-right: 5%;
+    }
+
+    /* .sugerenciasMobile {
+        display: flex;
+        overflow-y: scroll;
+    }
+
+    .sugerenciasMobile > img {
+        border: 1px solid red;
+    } */
 }
