@@ -130,6 +130,7 @@
     background: url(../../images/FF.png);
     animation: moveBackground 85s linear infinite;  
 }
+
 .conteiner-paralax{
     position:absolute;
     top:0;
@@ -155,7 +156,8 @@
 }
 
 @media only screen and (max-width: 820px) {
-    .paralax{
+    .paralax,
+    .conteiner-paralax{
         display: none;
     }
 
