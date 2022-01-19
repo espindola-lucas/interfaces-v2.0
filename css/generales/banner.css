@@ -30,3 +30,23 @@
     margin-top: 10%;
     cursor: pointer;
 }
+
+/* MOBILE */
+
+@media only screen and (max-width: 820px) {
+    .banner {
+        margin-top: 30%;
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+    .banner .boxBanner {
+        width: 100%;
+        padding: 5px 0px;
+    }
+
+    .banner .boxBanner > p {
+        display: none;
+    }
+}
