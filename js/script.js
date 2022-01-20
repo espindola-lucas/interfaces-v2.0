@@ -60,7 +60,12 @@ function like1() {
 
     function Publicar (){
         document.getElementById('Publicacion-ahora').style.display='block';
-        document.getElementById("placeholder").value = "Escribe una publicación...";
+        document.getElementById("placeholder").value = "Escribe una publicaciï¿½n...";
+        // document.getElementById('notificacion').style.marginTop='-101%';
+    }
+    function PublicarMovile() {
+        document.getElementById('publi-nueva-mobile').style.display='block';
+        document.getElementById("input-movile").value = "Escribe una publicaciï¿½n...";
         // document.getElementById('notificacion').style.marginTop='-101%';
     }
 
@@ -183,4 +188,112 @@ function like1() {
             return   ver5 = 'no';
             }
         });
+    }
+
+    function like1m() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+            document.getElementById("P1M").innerHTML = span + 11;
+        }
+    function like2m() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+        document.getElementById("P2M").innerHTML = span + 16;
+            }
+
+    function like3m() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+        document.getElementById("P3M").innerHTML = span + 200;
+                    }
+    function like4m() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+        document.getElementById("P4M").innerHTML = span + 301;
+                                    }
+    function like5m() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+        document.getElementById("P5M").innerHTML = span + 6;
+                                                                    }
+    function like6m() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+        document.getElementById("P6M").innerHTML = span + 18;  
+    }
+    function like7m() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+        document.getElementById("P7M").innerHTML = span + 19;   
+    }
+    let verm1 = 'si';
+    function  VerComentarioM1 (){
+        if (verm1 == 'si'){
+            document.getElementById('Comentario-movile1').style.display='block';
+            return   verm1 = 'no';
+        }
+        if (verm1 == 'no'){
+            document.getElementById('Comentario-movile1').style.display='none';
+            return verm1 = 'si';
+        }
+    }
+    let verm2= 'si';
+    function  VerComentarioM2 (){
+        if (verm2 == 'si'){
+            document.getElementById('Comentario-movile2').style.display='block';
+            return   verm2 = 'no';
+        }
+        if (verm2 == 'no'){
+            document.getElementById('Comentario-movile2').style.display='none';
+            return verm2 = 'si';
+        }
+    }
+    let verm3= 'si';
+    function  VerComentarioM3 (){
+        if (verm3 == 'si'){
+            document.getElementById('Comentario-movile3').style.display='block';
+            return   verm3 = 'no';
+        }
+        if (verm3 == 'no'){
+            document.getElementById('Comentario-movile3').style.display='none';
+            return verm3 = 'si';
+        }
+    }
+    let verm4= 'si';
+    function  VerComentarioM4 (){
+        if (verm4 == 'si'){
+            document.getElementById('Comentario-movile4').style.display='block';
+            return   verm4 = 'no';
+        }
+        if (verm4 == 'no'){
+            document.getElementById('Comentario-movile4').style.display='none';
+            return verm4= 'si';
+        }
+    }
+    let verm5= 'si';
+    function  VerComentarioM5 (){
+        if (verm5 == 'si'){
+            document.getElementById('Comentario-movile5').style.display='block';
+            return   verm5 = 'no';
+        }
+        if (verm5 == 'no'){
+            document.getElementById('Comentario-movile5').style.display='none';
+            return verm5= 'si';
+        }
+    }
+    let verm6= 'si';
+    function  VerComentarioM6 (){
+        if (verm6== 'si'){
+            document.getElementById('Comentario-movile6').style.display='block';
+            return   verm6 = 'no';
+        }
+        if (verm6== 'no'){
+            document.getElementById('Comentario-movile6').style.display='none';
+            return verm6= 'si';
+        }
+    }
+
+    let verm7= 'si';
+    function  VerComentarioM7 (){
+        if (verm7== 'si'){
+            document.getElementById('Comentario-movile7').style.display='block';
+            return   verm7 = 'no';
+        }
+        if (verm7== 'no'){
+            document.getElementById('Comentario-movile7').style.display='none';
+            return verm7= 'si';
+        }
     }
