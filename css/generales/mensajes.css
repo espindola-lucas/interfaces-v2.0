@@ -124,15 +124,6 @@ body {
 } */
 
 @media only screen and (max-width: 820px) {
-    /* .muroInicioMobile .headerMobile {
-        margin-top: -35%;
-        position: fixed;
-    }
-
-    .muroInicioMobile .navMobile {
-        margin-top: -20%;
-    } */
-
     body {
         overflow: scroll;
     }
@@ -185,7 +176,33 @@ body {
         margin-left: 4%;
     }
 
-    .listaChatMobile .persona .opciones {
+    .listaSolicitud .boxSolicitudMobile {
         display: flex;
+    }
+
+    .listaSolicitud .boxSolicitudMobile .imagen {
+        width: 15%;
+        margin-top: 4%;
+    }
+
+    .listaSolicitud .boxSolicitudMobile .imagen > img {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .listaSolicitud .boxSolicitudMobile .persona {
+        width: 60%;
+    }
+
+    .listaSolicitud .boxSolicitudMobile .persona > p{
+        font-size: 14px;
+        margin-top: -8%;
+    }
+
+    .listaSolicitud .boxSolicitudMobile .opciones {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12%;
     }
 }
