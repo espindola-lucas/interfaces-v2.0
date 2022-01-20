@@ -116,3 +116,76 @@ body {
     color: red;
     cursor: pointer;
 }
+
+/* responsive mobile */
+
+/* .muroInicioMobile {
+    display: none;
+} */
+
+@media only screen and (max-width: 820px) {
+    /* .muroInicioMobile .headerMobile {
+        margin-top: -35%;
+        position: fixed;
+    }
+
+    .muroInicioMobile .navMobile {
+        margin-top: -20%;
+    } */
+
+    body {
+        overflow: scroll;
+    }
+
+    .navChatMobile {
+        margin-top: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: var(--primary-color);
+        margin-bottom: 5%;
+    }
+
+    .navChatMobile > a {
+        all: unset;
+    }
+
+    .listaChatMobile .boxMensajeMobile {
+        display: flex;
+    }
+
+    .listaChatMobile .imagen > img {
+        width: 50px;
+        margin-top: 30%;
+        border-radius: 50%;
+    }
+
+    .listaChatMobile .persona {
+        width: 100%;
+    }
+
+    .listaChatMobile .persona .texto {
+        width: 65%;
+    }
+
+    .listaChatMobile .persona .opciones {
+        width: 35%;
+        margin-left: 65%;
+        margin-top: -12%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .listaChatMobile .persona > p {
+        font-size: 14px;
+        margin-top: -5%;
+    }
+
+    .listaChatMobile .persona > h4,
+    .listaChatMobile .persona > p {
+        margin-left: 4%;
+    }
+
+    .listaChatMobile .persona .opciones {
+        display: flex;
+    }
+}
