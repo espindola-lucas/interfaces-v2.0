@@ -550,17 +550,68 @@
                     <h4>Nombre y Apellido</h4>
                 </div>
                 <div class="hacerPostsMobile">
-                    <input type="text" placeholder="Escribe una publicacion..."><br>
+                    <input type="text" id="input-movile" placeholder="Escribe una publicacion..."><br>
                 </div>
                 <div class="opcionesPostsMobile">
                     <div class="imagenMobile">Subir <i class="fas fa-image"></i></div>
                     <div class="etiquetarMobile">Etiquetar <i class="fas fa-user-tag"></i></div>
                 </div>
                 <div class="compartirMobile">
-                    <button>Publicar</button>
+                    <button onclick="PublicarMovile()">Publicar</button>
                 </div>
             </div>
+            <div class="publicacionesMobile" style="display: none;" id="publi-nueva-mobile">
+                <div class="encabezadoPosts">
+                    <div class="persona">
+                        <img src="css/logo.png" alt="">
+                        <div class="nombreHora">
+                            <h4>Nombre y Apellido</h4>
+                            <p>14 de Diciembre a las 19:54</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
 
+                <div class="containerDatoPublicacion">
+                    <div class="textImgPostMobile">
+                        <p>
+                          nueva publicacion
+                        </p>
+                    </div>
+                </div>
+
+                <div class="opcionesMobile">
+                    <p id="P1M" onclick="like1m()"><span  class="fas fa-heart"></span> 10 </p>
+                    <p><i onclick="VerComentarioM1()" class="fas fa-comment"></i> 498</p>
+                    <a href="muroInicio-compartir.html">
+                        <p><i class="fas fa-share-alt"></i> 168</p>
+                    </a>
+                </div>
+            <div  id="Comentario-movile1" style="display: none;">               
+                <div class="comentariosMobile">
+                    <img src="css/logo.png" alt="">
+                    <div class="textoComentarioMobile">
+                        <p>Nombre y apellido</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consec adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div  class="comentariosMobile">
+                    <img src="css/logo.png" alt="">
+                    <div class="textoComentarioMobile">
+                        <p>Nombre y apellido</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consec adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div class="comentarMobile">
+                    <input type="text" placeholder="Agregar un comentario...">
+                </div>
+            </div>
             <div class="publicacionesMobile">
                 <div class="encabezadoPosts">
                     <div class="persona">
@@ -582,13 +633,13 @@
                 </div>
 
                 <div class="opcionesMobile">
-                    <p><span  id ="like1" class="fas fa-heart"></span> 10 </p>
-                    <p><i class="fas fa-comment"></i> 498</p>
+                    <p id="P2M" onclick="like2m()"><span  class="fas fa-heart"></span> 15 </p>
+                    <p><i  onclick="VerComentarioM2()"class="fas fa-comment"></i> 498</p>
                     <a href="muroInicio-compartir.html">
                         <p><i class="fas fa-share-alt"></i> 168</p>
                     </a>
                 </div>
-
+                <div  id="Comentario-movile2" style="display: none;">    
                 <div class="comentariosMobile">
                     <img src="css/logo.png" alt="">
                     <div class="textoComentarioMobile">
@@ -608,7 +659,7 @@
                         </p>
                     </div>
                 </div>
-
+            </div>
                 <div class="comentarMobile">
                     <input type="text" placeholder="Agregar un comentario...">
                 </div>
@@ -633,13 +684,13 @@
                 </div>
 
                 <div class="opcionesMobile">
-                    <p><span  id ="like1" class="fas fa-heart"></span> 10 </p>
-                    <p><i class="fas fa-comment"></i> 498</p>
+                    <p id="P3M" onclick="like3m()"><span  class="fas fa-heart"></span> 199 </p>
+                    <p><i  onclick="VerComentarioM3()" class="fas fa-comment"></i> 498</p>
                     <a href="muroInicio-compartir.html">
                         <p><i class="fas fa-share-alt"></i> 168</p>
                     </a>
                 </div>
-
+                <div  id="Comentario-movile3" style="display: none;">    
                 <div class="comentariosMobile">
                     <img src="css/logo.png" alt="">
                     <div class="textoComentarioMobile">
@@ -659,7 +710,7 @@
                         </p>
                     </div>
                 </div>
-
+            </div>
                 <div class="comentarMobile">
                     <input type="text" placeholder="Agregar un comentario...">
                 </div>
@@ -758,12 +809,13 @@
                     </div>
                 </div>
                 <div class="opcionesMobile">
-                    <p><span  id ="like1" class="fas fa-heart"></span> 10 </p>
-                    <p><i class="fas fa-comment"></i> 498</p>
+                    <p id="P4M" onclick="like4m()"><span  class="fas fa-heart"></span> 300 </p>
+                    <p><i onclick="VerComentarioM4()" class="fas fa-comment"></i> 498</p>
                     <a href="muroInicio-compartir.html">
                         <p><i class="fas fa-share-alt"></i> 168</p>
                     </a>
                 </div>
+                <div  id="Comentario-movile4" style="display: none;">  
                 <div class="comentariosMobile">
                     <img src="css/logo.png" alt="">
                     <div class="textoComentarioMobile">
@@ -782,6 +834,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
                 <div class="comentarMobile">
                     <input type="text" placeholder="Agregar un comentario...">
                 </div>
@@ -804,12 +857,13 @@
                     </div>
                 </div>
                 <div class="opcionesMobile">
-                    <p><span  id ="like1" class="fas fa-heart"></span> 10 </p>
-                    <p><i class="fas fa-comment"></i> 498</p>
+                    <p id="P5M" onclick="like5m()"><span  class="fas fa-heart"></span> 5 </p>
+                    <p><i  onclick="VerComentarioM5()" class="fas fa-comment"></i> 498</p>
                     <a href="muroInicio-compartir.html">
                         <p><i class="fas fa-share-alt"></i> 168</p>
                     </a>
                 </div>
+                <div  id="Comentario-movile5" style="display: none;">  
                 <div class="comentariosMobile">
                     <img src="css/logo.png" alt="">
                     <div class="textoComentarioMobile">
@@ -828,6 +882,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
                 <div class="comentarMobile">
                     <input type="text" placeholder="Agregar un comentario...">
                 </div>
@@ -869,12 +924,13 @@
                     </div>
                 </div>
                 <div class="opcionesMobile">
-                    <p><span  id ="like1" class="fas fa-heart"></span> 10 </p>
-                    <p><i class="fas fa-comment"></i> 498</p>
+                    <p id="P6M" onclick="like6m()"><span  class="fas fa-heart"></span>17 </p>
+                    <p><i  onclick="VerComentarioM6()"class="fas fa-comment"></i> 498</p>
                     <a href="muroInicio-compartir.html">
                         <p><i class="fas fa-share-alt"></i> 168</p>
                     </a>
                 </div>
+                <div  id="Comentario-movile6" style="display: none;">  
                 <div class="comentariosMobile">
                     <img src="css/logo.png" alt="">
                     <div class="textoComentarioMobile">
@@ -893,6 +949,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
                 <div class="comentarMobile">
                     <input type="text" placeholder="Agregar un comentario...">
                 </div>
@@ -915,12 +972,13 @@
                     </div>
                 </div>
                 <div class="opcionesMobile">
-                    <p><span  id ="like1" class="fas fa-heart"></span> 10 </p>
-                    <p><i class="fas fa-comment"></i> 498</p>
+                    <p id="P7M" onclick="like7m()"><span  class="fas fa-heart"></span>18 </p>
+                    <p><i onclick="VerComentarioM7()" class="fas fa-comment"></i> 498</p>
                     <a href="muroInicio-compartir.html">
                         <p><i class="fas fa-share-alt"></i> 168</p>
                     </a>
                 </div>
+                <div  id="Comentario-movile7" style="display: none;">  
                 <div class="comentariosMobile">
                     <img src="css/logo.png" alt="">
                     <div class="textoComentarioMobile">
@@ -939,6 +997,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
                 <div class="comentarMobile">
                     <input type="text" placeholder="Agregar un comentario...">
                 </div>
