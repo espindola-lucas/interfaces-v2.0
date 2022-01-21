@@ -43,10 +43,15 @@
     margin-left: 2%;
 }
 
-.container .seleccionarChat .chatAbierto .headerChat .opciones > i {
-    font-size: 36px;
-    margin-top: 40%;
-    margin-left: -40%;
+.container .seleccionarChat .chatAbierto .headerChat .opciones {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.container .seleccionarChat .chatAbierto .headerChat .opciones > p > i {
+    font-size: 26px;
 }
 
 .container .seleccionarChat .chatAbierto .recibido {
