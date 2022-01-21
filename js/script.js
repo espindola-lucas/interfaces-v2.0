@@ -297,3 +297,83 @@ function like1() {
             return verm7= 'si';
         }
     }
+   
+    function Comentar1(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('Comentario-nuevo-movile1').style.display='flex';
+                document.getElementById("input-comentario-nuevo").value = "Agregar un comentario...";
+                document.getElementById("input-comentario-nuevo").placeholder = "Agregar un comentario...";
+                document.getElementById('Comentario-movile1').style.display='block';
+            return   verm1 = 'no';
+            }
+        });
+    }
+    function Comentar2(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('Comentario-nuevo-movile2').style.display='flex';
+                document.getElementById("input-comentario-nuevo2").value = "Agregar un comentario...";
+                document.getElementById("input-comentario-nuevo2").placeholder = "Agregar un comentario...";
+                document.getElementById('Comentario-movile2').style.display='block';
+            return   verm2= 'no';
+            }
+        });
+    }
+    function Comentar3(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('Comentario-nuevo-movile3').style.display='flex';
+                document.getElementById("input-comentario-nuevo3").value = "Agregar un comentario...";
+                document.getElementById("input-comentario-nuevo3").placeholder = "Agregar un comentario...";
+                document.getElementById('Comentario-movile3').style.display='block';
+            return   verm3= 'no';
+            }
+        });
+    }
+    function Comentar4(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('Comentario-nuevo-movile4').style.display='flex';
+                document.getElementById("input-comentario-nuevo4").value = "Agregar un comentario...";
+                document.getElementById("input-comentario-nuevo4").placeholder = "Agregar un comentario...";
+                document.getElementById('Comentario-movile4').style.display='block';
+            return   verm4= 'no';
+            }
+        });
+    }
+    function Comentar5(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('Comentario-nuevo-movile5').style.display='flex';
+                document.getElementById("input-comentario-nuevo5").value = "Agregar un comentario...";
+                document.getElementById("input-comentario-nuevo5").placeholder = "Agregar un comentario...";
+                document.getElementById('Comentario-movile5').style.display='block';
+            return   verm5= 'no';
+            }
+        });
+    }
+    function Comentar6(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('Comentario-nuevo-movile6').style.display='flex';
+                document.getElementById("input-comentario-nuevo6").value = "Agregar un comentario...";
+                document.getElementById("input-comentario-nuevo6").placeholder = "Agregar un comentario...";
+                document.getElementById('Comentario-movile6').style.display='block';
+            return   verm6= 'no';
+            }
+        });
+    }
+    function Comentar7(){
+        document.addEventListener('keypress', function keypress(e){
+            if (e.keyCode == '13'){
+                document.getElementById('Comentario-nuevo-movile7').style.display='flex';
+                document.getElementById("input-comentario-nuevo7").value = "Agregar un comentario...";
+                document.getElementById("input-comentario-nuevo7").placeholder = "Agregar un comentario...";
+                document.getElementById('Comentario-movile7').style.display='block';
+            return   verm7= 'no';
+            }
+        });
+    }
+    
+    
