@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/generales/header.css">
     <link rel="stylesheet" href="css/generales/mensajes.css">
     <link rel="stylesheet" href="css/generales/notificaciones.css">
+    <link rel="stylesheet" href="css/especificos/chat-abierto.css">
     <script src="https://kit.fontawesome.com/616b98738f.js" crossorigin="anonymous"></script>
     <title>SocialPet</title>
 </head>
@@ -197,7 +198,80 @@
 
         <!-- cuadro para de seleccion de chat -->
         <div class="seleccionarChat">
-            <h1>Seleccione un chat para hablar con tu amigo.</h1>
+            <div class="chatAbierto">
+                <div class="headerChat">
+                    <div class="persona">
+                        <img src="css/logo.png" alt="">
+                        <h3>Pepe Mujica</h3> <br>
+                    </div>
+                    <div class="opciones">
+                        <p><i class="fas fa-video"></i></p>
+                        <p><i class="fas fa-times"></i></p>
+                    </div>
+                </div>
+
+                <div class="recibido">
+                    <img src="css/logo.png" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                </div>
+
+                <div class="enviado">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+
+                <div class="recibido">
+                    <img src="css/logo.png" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                </div>
+
+                <div class="enviado">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+
+                <div class="recibido">
+                    <img src="css/logo.png" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                </div>
+                <div class="enviado" style="display: none;" id="MensajeNuevo">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+                <div class="escribirMensaje">
+                    <input id="input"  onclick="MensajeNuevo()" type="text" placeholder="Escribe un mensaje...">
+                </div>
+            </div>
         </div>
 
         <!-- solicitud de mensajes -->
@@ -212,7 +286,7 @@
                         <strong>Nombre y Apellido</strong>
                     </p>
                     <p class="truncate">
-                        Quiere enviarte un mensajessssss
+                        Quiere enviarte un mensaje
                     </p>
                     <p class="hora">
                         <i onclick="Abrir()" class="fas fa-check"></i> 
