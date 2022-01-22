@@ -375,5 +375,27 @@ function like1() {
             }
         });
     }
-    
-    
+    function changeiconMobile (){
+        document.getElementById("icono-mobile1").className = "fas fa-user-clock";
+    }
+    function changeiconMobile1(){
+        document.getElementById("icono-mobile2").className = "fas fa-user-clock";
+    }
+    function changeiconMobile2(){
+        document.getElementById("icono-mobile3").className = "fas fa-user-clock";
+    }
+    function changeiconMobile3(){
+        document.getElementById("icono-mobile4").className = "fas fa-user-clock";
+    }
+    function changeiconMobile4(){
+        document.getElementById("icono-mobile5").className = "fas fa-user-clock";
+    }
+    function changeiconMobile5(){
+        document.getElementById("icono-mobile6").className = "fas fa-user-clock";
+    }
+    function changeiconMobile6(){
+        document.getElementById("icono-mobile7").className = "fas fa-user-clock";
+    }
+    function changeiconMobile7(){
+        document.getElementById("icono-mobile8").className = "fas fa-user-clock";
+    }
