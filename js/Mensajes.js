@@ -62,3 +62,17 @@ function MensajeNuevo (){
         }
     });
 }
+
+function solicitudMobile() {
+    let chatsMobile = document.getElementById('chatsMobile');
+    chatsMobile.style.display = 'none';
+    
+    let navChatsMobile = document.getElementById('navChatsMobile');
+    navChatsMobile.style.borderBottom = 'none';
+
+    let solicitudMobile = document.getElementById('solicitudMobile');
+    solicitudMobile.style.display = 'block';
+
+    let navMobile = document.getElementById('navSolicitudMobile');
+    navMobile.style.borderBottom = '1px solid var(--primary-color)';
+}
