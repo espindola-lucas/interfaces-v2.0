@@ -43,17 +43,14 @@
 
 .sessionFlow .cuadroForm .formulario > h1 {
     text-align: center;
-    /* margin-top: 20%; */
-}
-
-.sessionFlow .cuadroForm .formulario .register {
-    margin-top: 0% !important;
+    padding-top: 15%;
+    font-size: 24px;
 }
 
 .sessionFlow .cuadroForm .formulario > form {
     width: 80%;
     margin-left: 10%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .sessionFlow .cuadroForm .formulario > form > input {
