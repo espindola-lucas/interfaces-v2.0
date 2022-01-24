@@ -277,84 +277,6 @@
             </div>
         </div>
 
-        <!-- cuadro para de seleccion de chat -->
-        <!-- <div class="chatSeleccionado">
-            <div class="chatAbierto">
-                <div class="headerChat">
-                    <div class="persona">
-                        <img src="css/logo.png" alt="">
-                        <h3>Pepe Mujica</h3> <br>
-                    </div>
-                    <div class="opciones">
-                        <p><i class="fas fa-video"></i></p>
-                        <p><i class="fas fa-times"></i></p>
-                    </div>
-                </div>
-
-                <div class="recibido">
-                    <img src="css/logo.png" alt="">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum voluptate necessitatibus deleniti, 
-                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
-                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
-                    </p>
-                </div>
-
-                <div class="enviado">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum voluptate necessitatibus deleniti, 
-                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
-                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
-                    </p>
-                    <img src="css/logo.png" alt="">
-                </div>
-
-                <div class="recibido">
-                    <img src="css/logo.png" alt="">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum voluptate necessitatibus deleniti, 
-                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
-                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
-                    </p>
-                </div>
-
-                <div class="enviado">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum voluptate necessitatibus deleniti, 
-                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
-                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
-                    </p>
-                    <img src="css/logo.png" alt="">
-                </div>
-
-                <div class="recibido">
-                    <img src="css/logo.png" alt="">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum voluptate necessitatibus deleniti, 
-                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
-                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
-                    </p>
-                </div>
-                <div class="enviado" style="display: none;" id="MensajeNuevo">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum voluptate necessitatibus deleniti, 
-                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
-                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
-                    </p>
-                    <img src="css/logo.png" alt="">
-                </div>
-                <div class="escribirMensaje">
-                    <input id="input"  onclick="MensajeNuevo()" type="text" placeholder="Escribe un mensaje...">
-                </div>
-            </div>
-        </div> -->
-
         <!-- solicitud de mensajes -->
         <div class="solicitudMensajes">
             <h3>Solicitud de mensajes</h3>
@@ -655,17 +577,17 @@
         </div>
     </section>
 
-    <!-- lista de chatas -->
+    <!-- lista de chats -->
     <section class="navChatMobile">
-        <a style="text-decoration: underline; text-decoration-color: var(--primary-color);" href="mensajes.html">
+        <a id="navChatsMobile" style="border-bottom: 1px solid var(--primary-color);" href="mensajes.html">
             Chats
         </a>
-        <a href="solicitudMensajes.html">
+        <a id="navSolicitudMobile" onclick="solicitudMobile()">
             Solicitud de Mensajes
         </a>
     </section>
 
-    <section class="listaChatMobile">
+    <section id="chatsMobile" class="listaChatMobile">
         <div class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
@@ -901,6 +823,199 @@
                 <p>
                     <strong>Tu: </strong> Lorem ipsum dolor sit amet consectetur
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- solicitud de mensajes -->
+    <section id="solicitudMobile" class="listaSolicitud">
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nombre y apellido
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
             </div>
         </div>
     </section>
