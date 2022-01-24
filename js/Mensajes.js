@@ -1,6 +1,18 @@
-// function Abrir(){
-//     window.location.href = "chat-abierto.html";
-// }
+function Abrir(){
+    let elegirChat = document.getElementById('elegirChat');
+    elegirChat.style.display = 'none';
+
+    let chatSeleccionado = document.getElementById('chatSeleccionado');
+    chatSeleccionado.style.display = 'flex';
+}
+
+function cerrar() {
+    let elegirChat = document.getElementById('elegirChat');
+    elegirChat.style.display = 'block';
+
+    let chatSeleccionado = document.getElementById('chatSeleccionado');
+    chatSeleccionado.style.display = 'none';
+}
 
 function Rechazar1 (){
     document.getElementById('chat1').style.display='none';

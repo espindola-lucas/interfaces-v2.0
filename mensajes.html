@@ -196,8 +196,89 @@
             </div>
         </div>
 
+        <div id="elegirChat" class="seleccionarChat">
+            <h1>Seleccione un chat para hablar con tu amigo.</h1>
+        </div>
+
+        <div id="chatSeleccionado" class="chatAbierto">
+            <div class="boxChatAbierto">
+                <div class="headerChat">
+                    <div class="persona">
+                        <img src="css/logo.png" alt="">
+                        <h3>Pepe Mujica</h3> <br>
+                    </div>
+                    <div class="opciones">
+                        <p><i class="fas fa-video"></i></p>
+                        <p><i id="cerrarChat" onclick="cerrar()" class="fas fa-times"></i></p>
+                    </div>
+                </div>
+
+                <div class="recibido">
+                    <img src="css/logo.png" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                </div>
+
+                <div class="enviado">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+
+                <div class="recibido">
+                    <img src="css/logo.png" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                </div>
+
+                <div class="enviado">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+
+                <div class="recibido">
+                    <img src="css/logo.png" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                </div>
+                <div class="enviado" style="display: none;" id="MensajeNuevo">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum voluptate necessitatibus deleniti, 
+                        consectetur quas obcaecati ad nihil reprehenderit ipsum corrupti 
+                        corporis perspiciatis sint voluptatibus architecto repudiandae ipsam pariatur. Amet, debitis!
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+                <div class="escribirMensaje">
+                    <input id="input"  onclick="MensajeNuevo()" type="text" placeholder="Escribe un mensaje...">
+                </div>
+            </div>
+        </div>
+
         <!-- cuadro para de seleccion de chat -->
-        <div class="seleccionarChat">
+        <!-- <div class="chatSeleccionado">
             <div class="chatAbierto">
                 <div class="headerChat">
                     <div class="persona">
@@ -272,7 +353,7 @@
                     <input id="input"  onclick="MensajeNuevo()" type="text" placeholder="Escribe un mensaje...">
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- solicitud de mensajes -->
         <div class="solicitudMensajes">
