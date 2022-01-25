@@ -76,3 +76,17 @@ function solicitudMobile() {
     let navMobile = document.getElementById('navSolicitudMobile');
     navMobile.style.borderBottom = '1px solid var(--primary-color)';
 }
+
+function conversacionMobileAbrir() {
+    let chatsMobile = document.getElementById('chatsMobile');
+    chatsMobile.style.display = 'none';
+
+    let abrirConversacionMobile = document.getElementById('conversacionMobile');
+    abrirConversacionMobile.style.display = 'block';
+
+    let header = document.getElementById('headerMobile');
+    header.style.display = 'none'
+
+    let navChat = document.getElementById('navChatMobile');
+    navChat.style.display = 'none';
+}
