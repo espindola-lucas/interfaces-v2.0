@@ -25,6 +25,14 @@
 .publicidad .prioridades .media,
 .publicidad .prioridades .alta {
     width: 15%;
+    cursor: pointer;
+}
+
+.publicidad .prioridades .baja:hover,
+.publicidad .prioridades .media:hover,
+.publicidad .prioridades .alta:hover {
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
 }
 
 .publicidad .prioridades .baja > h3,
@@ -37,7 +45,7 @@
 }
 
 .publicidad .datos {
-    display: flex;  
+    display: none;  
     justify-content: space-evenly;
     width: 60%;
     margin-left: 20%;
