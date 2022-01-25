@@ -548,7 +548,7 @@
         </section>
 
     <!-- MOBILE -->
-    <section class="muroInicioMobile">
+    <section class="muroInicioMobile" id="headerMobile">
         <div class="headerMobile">
             <a href="muroInicio.html">SocialPet</a>
             <div class="buscarSalir">
@@ -578,7 +578,7 @@
     </section>
 
     <!-- lista de chats -->
-    <section class="navChatMobile">
+    <section class="navChatMobile" id="navChatMobile">
         <a id="navChatsMobile" style="border-bottom: 1px solid var(--primary-color);" href="mensajes.html">
             Chats
         </a>
@@ -588,7 +588,7 @@
     </section>
 
     <section id="chatsMobile" class="listaChatMobile">
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -602,7 +602,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -616,7 +616,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -630,7 +630,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -644,7 +644,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -658,7 +658,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -672,7 +672,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -686,7 +686,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -700,7 +700,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -714,7 +714,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -728,7 +728,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -742,7 +742,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -756,7 +756,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -770,7 +770,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -784,7 +784,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -798,7 +798,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -812,7 +812,7 @@
             </div>
         </div>
 
-        <div class="boxMensajeMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
             <div class="imagen">
                 <img src="css/logo.png" alt="">
             </div>
@@ -824,6 +824,65 @@
                     <strong>Tu: </strong> Lorem ipsum dolor sit amet consectetur
                 </p>
             </div>
+        </div>
+    </section>
+
+    <!-- conversaciones abiertas -->
+    <section class="conversacionMobile" id="conversacionMobile">
+        <div class="headerConversacion">
+            <a href="mensajes.html"><i class="fas fa-arrow-left"></i></a>
+            <div class="imgNombre">
+                <img src="css/logo.png" alt="">
+                <p>Nombre y apellido</p>
+            </div>
+            <p><i class="fas fa-video"></i></p>
+        </div>
+
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="boxEnviado">
+            <div class="enviadoMobile">
+                <p>asdasd2</p>
+            </div>
+        </div>
+        
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="boxEnviado">
+            <div class="enviadoMobile">
+                <p>asdasd2</p>
+            </div>
+        </div>
+
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="boxEnviado">
+            <div class="enviadoMobile">
+                <p>asdasd2</p>
+            </div>
+        </div>
+
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="escribirMensaje">
+            <input type="text" placeholder="Escribir mensaje...">
+            <i class="fas fa-paper-plane"></i>
         </div>
     </section>
 

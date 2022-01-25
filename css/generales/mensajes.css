@@ -222,13 +222,9 @@ body {
 }
 
 /* responsive mobile */
-
-/* .muroInicioMobile {
-    display: none;
-} */
-
 .navChatMobile,
-.boxMensajeMobile {
+.boxMensajeMobile,
+.conversacionMobile {
     display: none;
 }
 
@@ -237,6 +233,7 @@ body {
         overflow: scroll;
     }
 
+    /* nav de la parte de mensajes */
     .navChatMobile {
         margin-top: 35%;
         display: flex;
@@ -249,6 +246,7 @@ body {
         all: unset;
     }
 
+    /* lista de los chats */
     .listaChatMobile .boxMensajeMobile {
         display: flex;
     }
@@ -285,6 +283,120 @@ body {
         margin-left: 4%;
     }
 
+    /* conversacion abierta de algun chat */
+    .conversacionMobile {
+        background: rgba(196, 196, 196, 0.3);
+        height: 650px;
+        border-radius: var(--border-radius);
+    }
+
+    .conversacionMobile .headerConversacion {
+        /* display: block; */
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            0px 0px 0px rgba(255, 255, 255, 1 ),
+            0px 5px 5px rgba(0, 0, 0, 0.5)
+        ;
+    }
+
+    .conversacionMobile .headerConversacion > p > i,
+    .conversacionMobile .headerConversacion > a > i {
+        font-size: 20px;
+    }
+
+    .conversacionMobile .headerConversacion > a {
+        margin-top: 4.5%;
+        color: black;
+    }
+
+    .conversacionMobile .headerConversacion .imgNombre {
+        width: 50%;
+        display: flex;
+        margin-right: 20%;
+    }
+
+    .conversacionMobile .headerConversacion .imgNombre > img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 2%;
+    }
+
+    .conversacionMobile .headerConversacion .imgNombre > p {
+        margin-left: 4%;
+    }
+
+    /* recibido */
+    .conversacionMobile .boxRecibido {
+        display: flex;
+        justify-content: start;
+        margin-bottom: -4%;
+        margin-left: 2%;
+    }
+
+    .conversacionMobile .boxRecibido .recibidoMobile {
+        width: 60%;
+        text-align: end;
+    }
+    
+    .conversacionMobile .boxRecibido .recibidoMobile > p {
+        text-align: start;
+        background: var(--primary-color);
+        border-radius: 15px 30px 30px 0px;
+        padding: 5px;
+    }
+
+    /* enviado */
+    .conversacionMobile .boxEnviado {
+        display: flex;
+        justify-content: end;
+        margin-bottom: -4%;
+        margin-right: 2%;
+    }
+
+    .conversacionMobile .boxEnviado .enviadoMobile {
+        width: 60%;
+        text-align: end;
+    }
+
+    .conversacionMobile .boxEnviado .enviadoMobile > p {
+        text-align: start;
+        background: var(--light-color);
+        border-radius: 30px 30px 0px 30px;
+        padding: 5px;
+    }
+
+    /* enviar mensaje */
+    .escribirMensaje {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 43%;
+    }
+
+    .escribirMensaje > input[type="text"] {
+        width: 90%;
+        height: 30px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 0px 10px;
+    }
+
+    .escribirMensaje > input[type="text"]:focus {
+        outline: none;
+    }
+
+    .escribirMensaje > i {
+        position: absolute;
+        margin-top: 2%;
+        margin-left: 80%;
+    }
+
+    /* solicitud de mensajes */
     .listaSolicitud {
         display: none;
     }
