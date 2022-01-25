@@ -23,7 +23,9 @@
         <input id="input-buscar" type="text" onclick="BuscarAmigo()"placeholder="Buscar Amigos...">
         <div class="nav">
             <p onclick="MostrarNotificaciones()"><i id="campana"class="fas fa-bell"></i></p>
-            <p><i class="fas fa-home"></i></p>
+            <a href="muroInicio.html">
+                <p><i class="fas fa-home"></i></p>
+            </a>
             <a href="perfil.html">
                 <p><i class="fas fa-user-circle"></i></p>
             </a>
@@ -46,7 +48,7 @@
         </p>
 
         <div class="prioridades">
-            <div class="baja">
+            <div class="baja" id="prioridadBaja" onclick="prioridadBaja()">
                 <h3>Prioridad Baja</h3>
                 <p>
                     La publicidad aparecera ultima en la fila.
@@ -56,7 +58,7 @@
                 </p>
             </div>
 
-            <div class="media">
+            <div class="media" id="prioridadMedia" onclick="prioridadMedia()">
                 <h3>Prioridad Media</h3>
                 <p>
                     La publicidad aparecera en el medio de la fila.
@@ -66,7 +68,7 @@
                 </p>
             </div>
 
-            <div class="alta">
+            <div class="alta" id="prioridadAlta" onclick="prioridadAlta()">
                 <h3>Prioridad Alta</h3>
                 <p>
                     La publicidad aparecera primera en la fila.
@@ -122,5 +124,6 @@
     </section>
 </body>
 <script src="js/script.js"></script>
+<script src="js/publicidad.js"></script>
 <script src="js/Buscar.js"></script>
 </html>
