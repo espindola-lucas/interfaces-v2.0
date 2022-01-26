@@ -45,11 +45,15 @@
 }
 
 .publicidad .datos {
-    display: none;  
     justify-content: space-evenly;
     width: 60%;
     margin-left: 20%;
     margin-bottom: 2%;
+}
+
+.publicidad .datos .datosPublicidad,
+.publicidad .datos .datosPago {
+    display: none;
 }
 
 .publicidad .datos .datosPublicidad > h3,
