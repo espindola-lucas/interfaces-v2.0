@@ -124,8 +124,8 @@
     left:0;
     bottom:0;
     right:0;
-    background: url(../../images/FF.png);
-    animation: moveBackground 85s linear infinite;  
+    background: url(../../images/huesoss.png);
+    animation: moveBackground 70s linear infinite;  
 }
 
 .conteiner-paralax{
@@ -134,8 +134,8 @@
     left:0;
     bottom:0;
     right:0;
-    background: url(../../images/F.png);
-    animation: moveBackground 70s linear infinite;  
+    background: url(../../images/patass.png);
+    animation: moveBackground 85s linear infinite;  
 }
 /* Responsive mobile */
 
