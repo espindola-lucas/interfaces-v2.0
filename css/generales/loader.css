@@ -2,7 +2,7 @@
   width: 99.09%;
   height: 100%;
   position: absolute;
-  background: rgba(196, 196, 196);
+  background: rgba(196, 196, 196, .6);
   margin-top: -1.5%;
   display: flex;
   justify-content: center
@@ -16,8 +16,7 @@
     background:conic-gradient(#0000 10%, #A569BD);
     -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
     animation: loader 1s infinite linear;
-}
-.conteiner-all{
+    margin-top: 20%;
 }
 
 @keyframes loader {
@@ -30,7 +29,7 @@
   width: 99.09%;
   height: 100%;
   position: absolute;
-  background:  rgba(196, 196, 196);
+  background:  rgba(196, 196, 196, .6);
   margin-top: -1.5%;
   display: flex;
   justify-content: center;
@@ -58,6 +57,7 @@
     opacity: 0;
   }
 }
+
 @keyframes ring-loader {
   0%{
     opacity: 1;
