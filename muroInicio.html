@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/especificos/muroInicio.css">
     <link rel="stylesheet" href="css/generales/publicaciones.css">
     <link rel="stylesheet" href="css/generales/notificaciones.css">
+    <link rel="stylesheet" href="css/generales/loader.css">
     <script src="https://kit.fontawesome.com/616b98738f.js" crossorigin="anonymous"></script>
     <title>SocialPet</title>
 </head>
 <body>
     <!-- ring de cargad -->
-    <div class="ring">
-        <div class="loader"></div>
+    <div class="ring" id="ring">
+        <div  id="loader" class="loader"></div>
     </div>
 
     <!-- header -->
@@ -36,7 +37,7 @@
             </a>
         </div>
     </div>
-
+<div class="conteiner-all">
     <!--sugerencias de amistad / publicaciones / publicaciones -->
     <section class="container">
         <!-- sugerencias de amistad -->
@@ -509,7 +510,7 @@
             </div>
         </div>
     </section>
-
+</div>
     <!-- MOBILE -->
     <section class="muroInicioMobile">
         <div class="headerMobile">
@@ -1062,4 +1063,5 @@
 </body>
 <script src="js/script.js"></script>
 <script src="js/Buscar.js"></script>
+<script src="js/loader.js"></script>
 </html>

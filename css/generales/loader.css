@@ -1,9 +1,15 @@
 .ring{
-    display:flex;
-    justify-content:center;
+  width: 99.09%;
+  height: 100%;
+  position: absolute;
+  background: rgba(196, 196, 196);
+  margin-top: -1.5%;
+  display: flex;
+  justify-content: center
 }
 
 .ring .loader {
+  position: absolute;
     width:70px;
     height:70px;
     border-radius:50%;
@@ -11,9 +17,58 @@
     -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
     animation: loader 1s infinite linear;
 }
+.conteiner-all{
+}
 
 @keyframes loader {
   to {
+    transform: rotate(1turn)
+  }
+}
+
+.ring-container-finish{
+  width: 99.09%;
+  height: 100%;
+  position: absolute;
+  background:  rgba(196, 196, 196);
+  margin-top: -1.5%;
+  display: flex;
+  justify-content: center;
+  animation: ring 5s 1 linear;
+}
+
+.loader-container-finish{
+  position: absolute;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:conic-gradient(#0000 10%, #A569BD);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: ring-loader 5s 1 linear;
+}
+
+@keyframes ring {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.05;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes ring-loader {
+  0%{
+    opacity: 1;
+    transform: rotate(1turn)
+  }
+  50%{
+    opacity: 0.05;
+    transform: rotate(1turn)
+  }
+  100%{
+    opacity: 0;
     transform: rotate(1turn)
   }
 }
