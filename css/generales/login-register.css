@@ -9,7 +9,7 @@
     height: 700px;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(137, 88, 137, .9);
+    background-color: rgba(137, 88, 137, 1);
 }
 
 .sessionFlow .logo {
@@ -47,10 +47,23 @@
     font-size: 24px;
 }
 
+.sessionFlow .cuadroForm .formulario .registerTitle {
+    padding-top: 10%;
+}
+
 .sessionFlow .cuadroForm .formulario > form {
     width: 80%;
     margin-left: 10%;
     margin-top: 10%;
+    /* margin-bottom: 15%; */
+}
+
+.sessionFlow .cuadroForm .formulario > a .login {
+    margin-top: 20%;
+}
+
+.sessionFlow .cuadroForm .formulario > a .registerButton {
+    margin-top: 5%;
 }
 
 .sessionFlow .cuadroForm .formulario > form > input {
@@ -91,7 +104,11 @@
     padding: 10px 20px;
 }
 
-.sessionFlow .cuadroForm .formulario > p {
+.sessionFlow .cuadroForm .formulario .login {
+    margin-top: 5%;
+}
+
+.conteiner-paralax .paralax .form .sessionFlow .cuadroForm .formulario > p {
     text-align: center;
     font-size: 12px;
     color: var(--primary-color);
