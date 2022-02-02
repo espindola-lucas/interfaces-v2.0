@@ -125,7 +125,7 @@
     }
 
     .muroInicioMobile .navMobile > a {
-        color: var(--primary-color);
+        color: lightgray;
         font-size: 22px;
         margin-top: 4%;
     }
