@@ -5,7 +5,8 @@
   background: rgba(196, 196, 196, .6);
   margin-top: -1.5%;
   display: flex;
-  justify-content: center
+  justify-content: center;
+  z-index: 9999;
 }
 
 .ring .loader {
