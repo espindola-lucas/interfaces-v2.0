@@ -1,0 +1,36 @@
+@import url('../generales/variables.css');
+
+* {
+    font-family: var(--text-font);
+}
+
+footer {
+    background: rgba(196, 196, 196, .3);
+    padding-bottom: 5px;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 22px;
+}
+
+footer > .info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > .info .infoDev .social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > .info .infoDev .social > a {
+    font-size: 24px;
+    color: black;
+    padding: 0px 10px;
+}
+
+footer > .location > p {
+    font-size: 14px;
+    text-align: center;
+}
