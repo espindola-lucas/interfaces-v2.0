@@ -224,7 +224,8 @@ body {
 /* responsive mobile */
 .navChatMobile,
 .boxMensajeMobile,
-.conversacionMobile {
+.conversacionMobile,
+.listaSolicitud {
     display: none;
 }
 
