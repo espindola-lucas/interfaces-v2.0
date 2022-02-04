@@ -5,8 +5,8 @@
 }
 
 .sessionFlow {
-    width: 1000px;
-    height: 700px;
+    width: 52.083vw;
+    height: 75vh;
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(137, 88, 137, 1);
@@ -14,11 +14,14 @@
 
 .sessionFlow .logo {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sessionFlow .logo > img {
-    margin-top: 30%;
-    margin-left: 25%;
+    width: 300px;
+    height: 300px;
 }
 
 .sessionFlow .logo > h1 {
@@ -32,23 +35,25 @@
 
 .sessionFlow .cuadroForm {
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .sessionFlow .cuadroForm .formulario {
-    width: 400px;
-    height: 550px;
+    width: 20.833vw;
+    height: 60vh;
     margin-top: 13%;
     background-color: white;
 }
 
 .sessionFlow .cuadroForm .formulario > h1 {
     text-align: center;
-    padding-top: 15%;
+    padding-top: 2vh;
     font-size: 24px;
 }
 
 .sessionFlow .cuadroForm .formulario .registerTitle {
-    padding-top: 10%;
+    margin: 0%;
 }
 
 .sessionFlow .cuadroForm .formulario > form {
@@ -59,11 +64,14 @@
 }
 
 .sessionFlow .cuadroForm .formulario > a .login {
-    margin-top: 20%;
+    margin-top: 4vh;
+    width: 150px;
+    /* text-align: center; */
 }
 
-.sessionFlow .cuadroForm .formulario > a .registerButton {
+.sessionFlow .cuadroForm .formulario > a .crearCuenta {
     margin-top: 5%;
+    width: 150px;
 }
 
 .sessionFlow .cuadroForm .formulario > form > input {
@@ -122,6 +130,8 @@
 
 .sessionFlow .cuadroForm .formulario > a {
     all: unset;
+    width: 100%;
+    margin-left: -3%;
 }
 
 .sessionFlow .cuadroForm .formulario > a .crearCuenta {
@@ -166,6 +176,21 @@
     }
     100%{
         background-position: -1920px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .sessionFlow .cuadroForm .formulario > a {
+        margin-left: -13%;
+    }
+
+    .sessionFlow .cuadroForm .formulario .registerTitle {
+        font-size: 22px;
+    }
+
+    .sessionFlow .cuadroForm .formulario {
+        margin-top: 10%;
+        height: 65vh;
     }
 }
 
