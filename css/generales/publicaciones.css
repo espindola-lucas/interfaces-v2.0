@@ -32,13 +32,38 @@
     text-align: center;
 }
 
-.posts .crearPublicacion > img,
-.posts .publicaciones > img,
+.posts .crearPublicacion .headerPost > img,
+.posts .publicaciones .headerPost > img,
 .containerMobile .crearPostsMobile .persona > img, .containerMobile .postsMobile .publicacionesMobile .encabezadoPosts .persona > img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin-left: 5%;
+}
+
+.posts .crearPublicacion .headerPost, 
+.posts .publicaciones .headerPost {
+    display: flex;
+    padding-top: 2%;
+}
+
+.posts .publicaciones .headerPost > p {
+    font-size: 20px;
+    margin-left: 9%;
+}
+
+.posts .crearPublicacion .headerPost .infoAmigoPost,
+.posts .publicaciones .headerPost .infoAmigoPost {
+    width: 24vw;
+    margin-left: 4%;
+}
+
+.posts .publicaciones .headerPost .infoAmigoPost > p {
+    margin-top: -4%;
+}
+
+.posts .publicaciones .headerPost .infoAmigoPost > p {
+    font-size: 13px;
 }
 
 .posts .crearPublicacion > h4,
@@ -59,6 +84,10 @@
 .containerMobile .postsMobile .publicacionesMobile .comentarMobile {
     display: flex;
     justify-content: center;
+}
+
+.posts .publicaciones .conteinerImg .post > p {
+    margin-top: -0%;
 }
 
 .posts .crearPublicacion .textoPublicar > input[type="text"],
@@ -140,6 +169,9 @@
 
 .posts .publicaciones > img {
     margin-top: 2%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 .posts .publicaciones > p {
@@ -226,6 +258,20 @@
 
 .containerMobile {
     display: none;
+}
+
+@media only screen and (max-width: 1366px) {
+    .posts {
+        width: 40%;
+    }
+
+    .posts .crearPublicacion .opcionesPublicar {
+        width: 55%;
+    }
+
+    .posts .publicaciones .headerPost > p {
+        margin-left: 12%;
+    }
 }
 
 @media only screen and (max-width: 820px) {
