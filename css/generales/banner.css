@@ -33,6 +33,12 @@
 
 /* MOBILE */
 
+@media only screen and (max-width: 1366px) {
+    .banner .boxBanner > p {
+        margin-top: 14%;
+    }
+}
+
 @media only screen and (max-width: 820px) {
     .banner {
         margin-top: 30%;
