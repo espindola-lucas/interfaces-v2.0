@@ -24,14 +24,16 @@
     /* grid-area: sugerencia; */
     width: 15%;
     text-align: center;
+    position: fixed;
+    z-index: -1;
 }
 
 .container .sugerencia {
-    margin-left: 1%;
+    margin-right: 73vw;
 }
 
 .container .publicidad {
-    margin-right: 1%;
+    margin-left: 73vw;
 }
 
 
