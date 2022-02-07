@@ -5,6 +5,14 @@ document.getElementById('loader').addEventListener("animationend", function () {
     document.getElementById('ring').style.display = "none"; 
 });
 
+let url = location.href;
+let separar = url.split("/");
+let urlmensajes;
+
+for(let i = 0; separar.length > i; i++){
+    urlmensajes = separar[i];
+}
+
 let n = 0;
 function Timer() {
     let parar = 1;
@@ -22,12 +30,10 @@ function Timer() {
                 document.getElementById('ring').className = "ring-container-finish";
                 n = 0 ;
                 parar = 0;
-                document.body.style.overflow = 'scroll';
+                urlmensajes == "mensajes.html" ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll';
             }
-            
         }
     },1500);
 }
-
 
 document.addEventListener("DOMContentLoaded", Timer());

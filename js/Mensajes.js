@@ -90,3 +90,4 @@ function conversacionMobileAbrir() {
     let navChat = document.getElementById('navChatMobile');
     navChat.style.display = 'none';
 }
+

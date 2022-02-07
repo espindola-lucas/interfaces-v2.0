@@ -112,7 +112,7 @@ body {
 }
 
 .container .solicitudMensajes .boxMensaje .mensaje .truncate {
-    width: 90%;
+    width: 65%;
 }
 
 .container .solicitudMensajes .boxMensaje .mensaje .hora {
@@ -259,10 +259,6 @@ footer {
 }
 
 @media only screen and (max-width: 820px) {
-    body {
-        overflow: scroll;
-    }
-
     /* nav de la parte de mensajes */
     .navChatMobile {
         margin-top: 35%;
