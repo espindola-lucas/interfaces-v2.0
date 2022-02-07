@@ -52,10 +52,10 @@
     margin-bottom: 2%;
 }
 
-.publicidad .datos .datosPublicidad,
+/* .publicidad .datos .datosPublicidad,
 .publicidad .datos .datosPago {
     display: none;
-}
+} */
 
 .publicidad .datos .datosPublicidad > form > h3,
 .publicidad .datos .datosPago > form > h3 {
@@ -89,6 +89,7 @@
     border-radius: 5px;
     border: none;
     background-color: var(--primary-color);
+    opacity: 0.5;
 }
 
 .publicidad > a > button:hover {

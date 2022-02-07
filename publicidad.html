@@ -80,7 +80,7 @@
         </div>
 
         <div class="datos">
-            <div class="datosPublicidad">
+            <div id="datosPublicidad" class="datosPublicidad">
                 <form>
                     <h3>Datos de publicidad</h3>
                     <label>Nombre de empresa/emprendimiento</label><br>
@@ -90,11 +90,11 @@
                     <label>Adjuntar imagen de la publicidad</label><br>
                     <input type="file"><br>
                     <label">Link a pagina de contacto</Link> </label><br>
-                    <input type="text" placeholder="Ingrese el link "><br>
+                    <input id="link" type="text" placeholder="Ingrese el link"><br>
                 </form>
             </div>
 
-            <div class="datosPago">
+            <div id="datosPago" class="datosPago">
                 <form>
                     <h3>Datos de pago</h3>
                     <label>Elija su tarjeta: </label><br>
@@ -111,13 +111,13 @@
                     <label>Vencimiento</label><br>
                     <input type="text" placeholder="Ingrese MM/AA"><br>
                     <label>Codigo de seguridad</label><br>
-                    <input type="text" placeholder="Ingrese codigo de seguridad"><br>
+                    <input id="codigo" type="text" placeholder="Ingrese codigo de seguridad"><br>
                 </form>
             </div>
         </div>
 
         <a href="muroInicio.html">
-            <button>
+            <button id="enviarDatos">
                 Enviar datos
             </button>
         </a>
