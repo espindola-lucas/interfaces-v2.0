@@ -164,6 +164,32 @@
     background: url(../../images/patass.png);
     animation: moveBackground 85s linear infinite;  
 }
+.error{
+    display: none;
+    color: red;
+    font-size: 11px;
+    margin-top: -6%;
+}
+.aviso{
+    display: block;
+    font-size: 11px;
+    margin-top: -6%;
+}
+input[type="email"]:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+input[type="email"]:focus:invalid {
+    box-shadow: none;
+}
+input[type="password"]:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+input[type="password"]:focus:invalid {
+    box-shadow: none;
+}
+.contraseñaError{
+    box-shadow: 0 0 5px 1px red;
+}
 /* Responsive mobile */
 
 .loginMobile,
@@ -193,6 +219,17 @@
         margin-top: 10%;
         height: 65vh;
     }
+    .errorMobile{
+        display: none;
+        color: red;
+        font-size: 10px;
+        margin-top: -4%;
+        }
+    .avisoMobile{
+        display: block;
+        font-size: 10px;
+        margin-top: -5%;
+        }
 }
 
 @media only screen and (max-width: 820px) {
@@ -286,4 +323,5 @@
         font-size: 12px;
         color: var(--primary-color);
     }
+
 }

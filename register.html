@@ -24,16 +24,20 @@
                                 <label>Nombre y Apellido</label><br>
                                 <input class="input2" type="text" id="" name="" placeholder="Ingrese su nombre y apellido..."><br>
                                 <label>Email</label><br>
-                                <input class="input2" type="text" id="" name="" placeholder="Ingrese su email...">
+                                <input class="input2" type="email"  id="mail" name="" placeholder="Ingrese su email...">
+                                <p id='error' class="error">El email que ingresaste es invalido.</p>
                                 <label>Contrasenia</label><br>
-                                <input class="input2" type="password" id="" name="" placeholder="Ingrese su contrasenia..."><br>
+                                <input class="input2" id="contrasenia" type="password" maxlength="12" minlength="8" id="" name="" placeholder="Ingrese su contrasenia..." ><br>
+                                <p id='aviso' class="aviso">La contraseña debe tener entre 8 y 12 caracteres.</p>
+                                <p id='errorC' class="error">La contraseña que ingresaste es invalida.</p>
                                 <label>Repita su Contrasenia</label><br>
-                                <input class="input2" type="password" id="" name="" placeholder="Ingrese su contrasenia..."><br>
+                                <input class="input2" type="password" id="repetircontrasenia" name="" placeholder="Ingrese su contrasenia..."><br>
+                                <p id='errorCr' class="error">Las contraseñas no coinciden</p>
                                 <label>Fecha de Nacimiento</label><br>
                                 <input type="date">
                             </form>
                             <a href="muroInicio.html">
-                                <button class="login registerButton">
+                                <button  id="" class="login registerButton">
                                     Iniciar Sesion
                                 </button>
                             </a>
@@ -62,12 +66,16 @@
             <form>
                 <label>Nombre y Apellido</label><br>
                 <input class="input1" type="text" id="" name="" placeholder="Ingrese su nombre y apellido"><br>
-                <label>Corre Electronico</label><br>
-                <input type="text" id="" name="" placeholder="Ingrese su correo electronico"><br>
+                <label>Email</label><br>
+                <input type="email" id="errorMobileMail" name="errorMobileMail" placeholder="Ingrese su email..."><br>
+                <p id='errorMobile' class="errorMobile">El email que ingresaste es invalido.</p>
                 <label>Contrasenia</label><br>
-                <input type="text" id="" name="" placeholder="Ingrese su contrasenia"><br>
+                <input type="password" maxlength="12" minlength="8"id="contraseniaMobile" name="" placeholder="Ingrese su contrasenia"><br>
+                <p id='avisoMobile' class="avisoMobile">La contraseña debe tener entre 8 y 12 caracteres.</p>
+                <p id='errorMobileC' class="errorMobile">La contraseña que ingresaste es invalida.</p>
                 <label>Repita su contrasenia</label><br>
-                <input type="text" id="" name="" placeholder="Repita su contrasenia"><br>
+                <input type="password" id="repetircontraseniamobile" name="" placeholder="Repita su contrasenia"><br>
+                <p id='errorCrm' class="errorMobile">Las contraseñas no coinciden</p>
                 <label>Fecha de Nacimiento</label>
                 <input type="date">
             </form>
@@ -79,4 +87,5 @@
         </div>
     </section>
 </body>
+<script src="js/validacion.js"></script>
 </html>
