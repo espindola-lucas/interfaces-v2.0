@@ -18,7 +18,7 @@ function validar (){
     } else {
         document.getElementById("contraseniaIncorrecta").style.display= "none";
         document.getElementById("ContraseniaL").style.boxShadow =  "none";
-        window.location.replace("file:///home/rosario/visuPruebas/interfaces-v2.0/muroInicio.html");
+        window.location="muroInicio.html";
     }
 }
 
