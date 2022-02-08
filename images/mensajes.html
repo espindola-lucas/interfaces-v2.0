@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/generales/loader.css"> -->
+    <link rel="stylesheet" href="css/generales/header.css">
+    <link rel="stylesheet" href="css/generales/mensajes.css">
+    <link rel="stylesheet" href="css/generales/notificaciones.css">
+    <link rel="stylesheet" href="css/especificos/chat-abierto.css">
+    <link rel="stylesheet" href="css/generales/loader.css">
+    <script src="https://kit.fontawesome.com/616b98738f.js" crossorigin="anonymous"></script>
+    <title>SocialPet</title>
+</head>
+<body>
+    <!-- ring de cargad -->
+    <div class="ring" id="ring">
+        <div  id="loader" class="loader"></div>
+      </div>
+
+    <!-- header -->
+    <div class="header">
+        <a href="muroInicio.html">SocialPet</a>
+        <input id="input-buscar" type="text" onclick="BuscarAmigo()"placeholder="Buscar Amigos...">
+        <div class="nav">
+            <p onclick="MostrarNotificaciones()"><i id="campana"class="fas fa-bell"></i></p>
+            <a href="muroInicio.html">
+                <p><i class="fas fa-home"></i></p>
+            </a>
+            <a href="perfil.html">
+                <p><i class="fas fa-user-circle"></i></p>
+            </a>
+            <a href="mensajes.html">
+                <p><i style="color: #844B84;" class="fas fa-comments"></i></p>
+            </a>
+            <a href="index.html">
+                <p><i class="fas fa-sign-out-alt"></i></p>
+            </a>
+        </div>
+    </div>
+
+    <section class="container">
+        <!-- lista de chats -->
+        <div class="listaDeChats">
+            <h3>Chats</h3>
+            <div class="linea"></div>
+            <!-- rectangulo de mensaje -->
+            <div class="boxMensaje" onclick="Abrir()">
+                <img src="images/perfil4.png" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Juan Perez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Juan: </strong> Genial ,  ya me pongo a llamarlas a ver si alguno me puede atender al gordo
+                    </p>
+                    <p class="hora">
+                        <strong>10 min</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" onclick="Abrir()">
+                <img src="images/perfil1.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Julieta Paez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Tu: </strong>Me encanto la publicacion de como cuidarlos del calor.
+                    </p>
+                    <p class="hora">
+                        <strong>40 min</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" onclick="Abrir()">
+                <img src="images/perfil2.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Camila Ramirez </strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Camila: </strong>Hola tenes el numero de alguna veterinaria de urgencias? 
+                    </p>
+                    <p class="hora">
+                        <strong>1 hora</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" onclick="Abrir()">
+                <img src="images/perfil6.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Carlos Lopez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Tu: </strong>Hola por ahora no tengo ningun perro en adopción .
+                    </p>
+                    <p class="hora">
+                        <strong> 2 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" onclick="Abrir()">
+                <img src="images/perfil7.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Julian Gonzalez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Tu: </strong>hola , como estas ?
+                    </p>
+                    <p class="hora">
+                        <strong>3 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" onclick="Abrir()">
+                <img src="images/perfil10.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Marcos Rodriguez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Tu: </strong>Algun dao dbarracas para comprar alimento ?
+                    </p>
+                    <p class="hora">
+                        <strong>6 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje"  onclick="Abrir()">
+                <img src="images/perfil3.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Macarena Gomez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Macarena: </strong>Me encantaron las fotos de tu perrita!
+                    </p>
+                    <p class="hora">
+                        <strong>7 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje"  onclick="Abrir()">
+                <img src="images/perfil5.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Julia Gonzalez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Tu: </strong>Veterinaria Los Pipis atiende de urgencias 
+                    </p>
+                    <p class="hora">
+                        <strong>9 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje"  onclick="Abrir()">
+                <img src="images/perfil11.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Agustin Alonso</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Agustin: </strong> hay perritos en adopcion en el barrio palermo .
+                    </p>
+                    <p class="hora">
+                        <strong> 1 dia</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje"  onclick="Abrir()">
+                <img src="images/perfil12.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Nahuel Perez</strong>
+                    </p>
+                    <p class="truncate">
+                        <strong>Tu: </strong>Perdon que te moleste queria saber el numero de alguna vete 
+                    </p>
+                    <p class="hora">
+                        <strong> 1 dia</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="elegirChat" class="seleccionarChat">
+            <h1>Seleccione un chat para hablar con tu amigo.</h1>
+        </div>
+
+        <div id="chatSeleccionado" class="chatAbierto">
+            <div class="boxChatAbierto">
+                <div class="headerChat">
+                    <div class="persona">
+                        <img src="images/perfil4.png" alt="">
+                        <h3>Juan Perez</h3> <br>
+                    </div>
+                    <div class="opciones">
+                        <p><i class="fas fa-video"></i></p>
+                        <p><i id="cerrarChat" onclick="cerrar()" class="fas fa-times"></i></p>
+                    </div>
+                </div>
+
+                <div class="recibido">
+                    <img src="images/perfil4.png" alt="">
+                    <p>
+                       Hola como estas ? Necesito urgente numeros de veterinarias que atendan urgencias 
+                       tengo un pastor aleman atropellado y por lo que se ve va a necesitar cirugia.
+                    </p>
+                </div>
+
+                <div class="enviado">
+                    <p>
+                        Hola bien , uh pobrecito ahora busco y te mando un par de numeros asi ya te quedan 
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+
+                <div class="recibido">
+                    <img src="images/perfil4.png" alt="">
+                    <p>
+                        Si el pobre no para de llorar , se mando a cruzar la calle y el auto que justo iba pasando no llego a frenar 
+                    </p>
+                </div>
+
+                <div class="enviado">
+                    <p>
+                        VETERINARIA AMAIKE  Numero : 2494-332244
+                        Clínica Veterinaria Paula Ribas : 2494-556677
+                        Consultorios Veterinario Pampa : 2492-778899
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+
+                <div class="recibido">
+                    <img src="images/perfil4.png" alt="">
+                    <p>
+                        Genial ,  ya me pongo a llamarlas a ver si alguno me puede atender al gordo
+                    </p>
+                </div>
+                <div class="enviado" style="display: none;" id="MensajeNuevo">
+                    <p>
+                        Dale , cualquier cosa que necesites o si alguna de esas vete no te lo pueden atender avisame yy buscamos otras 
+                    </p>
+                    <img src="css/logo.png" alt="">
+                </div>
+                <div class="escribirMensaje">
+                    <input id="input"  onclick="MensajeNuevo()" type="text" placeholder="Escribe un mensaje...">
+                </div>
+            </div>
+        </div>
+
+        <!-- solicitud de mensajes -->
+        <div class="solicitudMensajes">
+            <h3>Solicitud de mensajes</h3>
+            <div class="linea"></div>
+            <!-- rectangulo de mensaje -->
+            <div class="boxMensaje" id="chat1">
+                <img src="images/perfil13.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Camilo Gogorza</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar1()" class="fas fa-times"></i>
+                        <strong>7 min</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat2">
+                <img src="images/perfil8.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Mariana Perez</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar2()" class="fas fa-times"></i>
+                        <strong>10 min</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat3">
+                <img src="images/perfil9.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Monica Gomez</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar3()" class="fas fa-times"></i>
+                        <strong> 50 min</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat4">
+                <img src="images/perfil14.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Paola Rio</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar4()" class="fas fa-times"></i>
+                        <strong> 1 hora</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat5">
+                <img src="images/perfil14.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Julio Perez</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar5()" class="fas fa-times"></i>
+                        <strong>1 hora</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat6">
+                <img src="images/perfil19.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Ariel Gonzalez</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar6()" class="fas fa-times"></i>
+                        <strong>2 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat7">
+                <img src="images/perfil20.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Matias Romero</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar7()" class="fas fa-times"></i>
+                        <strong>2 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat8">
+                <img src="images/perfil21.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Lucas Espindola</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar8()" class="fas fa-times"></i>
+                        <strong>3 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat9">
+                <img src="images/perfil17.jpeg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Rosario Tani </strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar9()" class="fas fa-times"></i>
+                        <strong>4 horas</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxMensaje" id="chat10">
+                <img src="images/perfil18.jpg" alt="">
+                <div class="mensaje">
+                    <p>
+                        <strong>Florecia Gonzalez</strong>
+                    </p>
+                    <p class="truncate">
+                        Quiere enviarte un mensaje
+                    </p>
+                    <p class="hora">
+                        <i onclick="Abrir()" class="fas fa-check"></i> 
+                        <i onclick="Rechazar10()" class="fas fa-times"></i>
+                        <strong> 7 horas</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Notificacion  -->
+        <section id="notificacion"  class="notificaciones" style="margin-top: -50%;">
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil4.png" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Julian Perez</strong> Le gusto tu publicacion</p>
+                    <span>Hace 1 min</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil1.jpg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Malena Abril</strong> Le gusto tu publicacion</p>
+                    <span>Hace 2 min</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil2.jpeg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Maria Lopez</strong> Le gusto tu publicacion</p>
+                    <span>Hace  2 min</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil3.jpg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Rosario Tani</strong> Le gusto tu publicacion</p>
+                    <span>Hace 2 mins</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil5.jpg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Mariela Alonso</strong> Comento tu publicacion</p>
+                    <span>Hace 3 min</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil6.jpg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Nicolas Dominguez</strong> Le gusto tu publicacion</p>
+                    <span>Hace 3 min</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil7.jpeg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Ariel Gonzalez</strong> Comento tu publicacion</p>
+                    <span>Hace 1 hora</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil8.jpeg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Joaquina Tani </strong> Comento tu publicacion</p>
+                    <span>Hace 3 horas</span>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <div class="img">
+                    <img src="images/perfil9.jpg" alt="">
+                </div>
+                <div class="nombre">
+                    <p><strong>Clara Lopez</strong> Le gusto tu publicacion</p>
+                    <span>Hace 6 horas</span>
+                </div>
+            </div>
+        </section>
+
+    <!-- MOBILE -->
+    <section class="muroInicioMobile" id="headerMobile" >
+        <div class="headerMobile">
+            <a href="muroInicio.html">SocialPet</a>
+            <div class="buscarSalir">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="navMobile">
+            <a href="">
+                <i class="fas fa-bell"></i>
+            </a>
+            <a href="">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="perfil.html">
+                <i class="fas fa-user-circle"></i>
+            </a>
+            <a href="mensajes.html">
+                <i style="color: #844B84;" class="fas fa-comments"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- lista de chats -->
+    <section class="navChatMobile" id="navChatMobile">
+        <a id="navChatsMobile" style="border-bottom: 1px solid var(--primary-color);" href="mensajes.html">
+            Chats
+        </a>
+        <a id="navSolicitudMobile" onclick="solicitudMobile()">
+            Solicitud de Mensajes
+        </a>
+    </section>
+
+    <section id="chatsMobile" class="listaChatMobile">
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil4.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Juan Perez
+                </h4>
+                <p>
+                    <strong>Juan: </strong> Encontre un  perro macho en la zona del calvario.
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil1.jpg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Julieta Paez
+                </h4>
+                <p>
+                    <strong>Tu: </strong> Me encanto la publicacion de como cuidarlos del calor.
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil2.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Camila Ramirez
+                </h4>
+                <p>
+                    <strong>Camila: </strong>Hola tenes el numero de alguna veterinaria de urgencias? 
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil6.jpg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Carlos Lopez
+                </h4>
+                <p>
+                    <strong>Tu: </strong> Hola por ahora no tengo ningun perro en adopción .
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil7.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Julian Gonzalez
+                </h4>
+                <p>
+                    <strong>Tu: </strong> hola , como estas ?
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil10.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Marcos Rodriguez
+                </h4>
+                <p>
+                    <strong>Tu: </strong> Algun dao dbarracas para comprar alimento ?
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil3.jpg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Macarena Gomez
+                </h4>
+                <p>
+                    <strong>Macarena: </strong> Me encantaron las fotos de tu perrita!
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil5.jpg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Julia Gonzalez
+                </h4>
+                <p>
+                    <strong>Tu: </strong>Veterinaria Los Pipis atiende de urgencias 
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil11.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Agustin Alonso
+                </h4>
+                <p>
+                    <strong>Agustin: </strong> hay perritos en adopcion en el barrio palermo .
+                </p>
+            </div>
+        </div>
+
+        <div onclick="conversacionMobileAbrir()" class="boxMensajeMobile">
+            <div class="imagen">
+                <img src="images/perfil12.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Nahuel Perez
+                </h4>
+                <p>
+                    <strong>Tu: </strong> Perdon que te moleste queria saber el numero de alguna vete 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- conversaciones abiertas -->
+    <section class="conversacionMobile" id="conversacionMobile">
+        <div class="headerConversacion">
+            <a href="mensajes.html"><i class="fas fa-arrow-left"></i></a>
+            <div class="imgNombre">
+                <img src="css/logo.png" alt="">
+                <p>Nombre y apellido</p>
+            </div>
+            <p><i class="fas fa-video"></i></p>
+        </div>
+
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="boxEnviado">
+            <div class="enviadoMobile">
+                <p>asdasd2</p>
+            </div>
+        </div>
+        
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="boxEnviado">
+            <div class="enviadoMobile">
+                <p>asdasd2</p>
+            </div>
+        </div>
+
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="boxEnviado">
+            <div class="enviadoMobile">
+                <p>asdasd2</p>
+            </div>
+        </div>
+
+        <div class="boxRecibido">
+            <div class="recibidoMobile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="escribirMensaje">
+            <input type="text" placeholder="Escribir mensaje...">
+            <i class="fas fa-paper-plane"></i>
+        </div>
+    </section>
+
+    <!-- solicitud de mensajes -->
+    <section id="solicitudMobile" class="listaSolicitud" >
+        <div class="boxSolicitudMobile"  id="chat1">
+            <div class="imagen">
+                <img src="images/perfil13.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Camilo Gogorza
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i onclick="Abrir()" style="color:green;" class="fas fa-check"></i>
+                <i  onclick="Rechazar1()" style="color:red;" class="fas fa-times"></i>
+                <strong>7 min</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat2">
+            <div class="imagen">
+                <img src="images/perfil8.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Mariana Perez
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i  onclick="Abrir()" style="color:green;" class="fas fa-check"></i>
+                <i onclick="Rechazar2()" style="color:red;" class="fas fa-times"></i>
+                <strong>10 min</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat3">
+            <div class="imagen">
+                <img src="css/logo.png" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Monica Gomez
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i  onclick="Abrir()" style="color:green;" class="fas fa-check"></i>
+                <i  onclick="Rechazar3()" style="color:red;" class="fas fa-times"></i>
+                <strong>50 min</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat4">
+            <div class="imagen">
+                <img src="images/perfil14.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Paola Rio
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i onclick="Abrir()" style="color:green;" class="fas fa-check"></i>
+                <i onclick="Rechazar4()" style="color:red;" class="fas fa-times"></i>
+                <strong>1 hora</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat5">
+            <div class="imagen">
+                <img src="images/perfil14.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Julio Perez
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i onclick="Abrir()"  style="color:green;" class="fas fa-check"></i>
+                <i   onclick="Rechazar5()" style="color:red;" class="fas fa-times"></i>
+                <strong>1 hora</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile"id="chat6">
+            <div class="imagen">
+                <img src="images/perfil19.jpg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Ariel Gonzalez
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i  onclick="Abrir()"  style="color:green;" class="fas fa-check"></i>
+                <i onclick="Rechazar6()" style="color:red;" class="fas fa-times"></i>
+                <strong>2 horas</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat7">
+            <div class="imagen">
+                <img src="images/perfil20.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Matias Romero
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i style="color:green;" class="fas fa-check"></i>
+                <i style="color:red;" class="fas fa-times"></i>
+                <strong>2 horas</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat8">
+            <div class="imagen">
+                <img src="images/perfil21.jpg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Lucas Espindola
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i onclick="Abrir()"  style="color:green;" class="fas fa-check"></i>
+                <i onclick="Rechazar8()"  style="color:red;" class="fas fa-times"></i>
+                <strong>3 horas</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat9">
+            <div class="imagen">
+                <img src="images/perfil17.jpeg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Rosario Tani
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i onclick="Abrir()" style="color:green;" class="fas fa-check"></i>
+                <i  onclick="Rechazar9()"  style="color:red;" class="fas fa-times"></i>
+                <strong>4 horas</strong>
+            </div>
+        </div>
+
+        <div class="boxSolicitudMobile" id="chat10">
+            <div class="imagen">
+                <img src="images/perfil18.jpg" alt="">
+            </div>
+            <div class="persona">
+                <h4>
+                    Florecia Gonzalez
+                </h4>
+                <p>
+                    Quiere enviarte un mensaje.
+                </p>
+            </div>
+            <div class="opciones">
+                <i onclick="Abrir()"  style="color:green;" class="fas fa-check"></i>
+                <i  onclick="Rechazar10()" style="color:red;" class="fas fa-times"></i>
+                <strong>7 Sem</strong>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/Notificaciones.js"></script>
+<script src="js/Buscar.js"></script>
+<script src="js/Mensajes.js"></script>
+<script src="js/loader.js"></script>
+</html>
