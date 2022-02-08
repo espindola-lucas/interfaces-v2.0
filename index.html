@@ -22,12 +22,14 @@
                             <h1>Iniciar Sesion</h1>
                             <form>
                                 <label>Email</label><br>
-                                <input class="input1" type="text" id="" name="" placeholder="Ingrese su email..."><br>
+                                <input class="input1" type="email" id="emailLogin" name="" placeholder="Ingrese su email..."><br>
+                                <p id='errorLogin' class="error">El email que ingresaste es invalido.</p>
                                 <label>Contrasenia</label><br>
-                                <input type="password" id="" name="" placeholder="Ingrese su contrasenia...">
+                                <input type="password" id="ContraseniaL" name="" placeholder="Ingrese su contrasenia...">
+                                <p id='contraseniaIncorrecta' class="error">La contraseña que ingresaste es incorrecta.</p>
                             </form>
-                            <a href="muroInicio.html">
-                                <button class="login">
+                            <a  id="a" >
+                                <button onclick="validar()" class="login">
                                     Iniciar Sesion
                                 </button>
                             </a>
@@ -36,7 +38,7 @@
                             </p>
                             <hr>
                             <a href="register.html">
-                                <button class="crearCuenta">
+                                <button  class="crearCuenta">
                                     Crear una cuenta
                                 </button>
                             </a>
@@ -57,11 +59,13 @@
 
             <form>
                 <label>Email</label><br>
-                <input class="input1" type="text" id="" name="" placeholder="Ingrese su email..."><br>
+                <input class="input1" type="email" id="emailLoginM" name="" placeholder="Ingrese su email..."><br>
+                <p id='errorLoginM' class="error">El email que ingresaste es invalido.</p>
                 <label>Contrasenia</label><br>
-                <input type="password" id="" name="" placeholder="Ingrese su contrasenia...">
+                <input type="password" id="ContraseniaLM" name="" placeholder="Ingrese su contrasenia...">
+                <p id='contraseniaIncorrectaM' class="error">La contraseña que ingresaste es incorrecta.</p>
             </form>
-            <a href="muroInicio.html">
+            <a onclick="validarM()">
                 <button class="login">
                     Iniciar Sesion
                 </button>
@@ -78,4 +82,5 @@
         </div>
     </section>
 </body>
+<script src="js/validacionLogin.js"></script>
 </html>
