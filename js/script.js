@@ -29,7 +29,6 @@ function like1() {
     function changeicon1(){
         document.getElementById("icono1").className = "fas fa-user-clock";
     }
-    
     function changeicon2(){
         document.getElementById("icono2").className = "fas fa-user-clock";
     }
