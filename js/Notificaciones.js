@@ -14,3 +14,10 @@ function MostrarNotificaciones (){
     }
     
 }
+
+function changeiconB(){
+    document.getElementById("iconob").className = "fas fa-user-clock";
+}
+function changeiconB1(){
+    document.getElementById("iconob1").className = "fas fa-user-clock";
+}
