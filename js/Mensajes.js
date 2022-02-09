@@ -91,3 +91,37 @@ function conversacionMobileAbrir() {
     navChat.style.display = 'none';
 }
 
+function AbrirMobile() {
+    let chatsMobile = document.getElementById('chatsMobile');
+    chatsMobile.style.display = 'none';
+
+    let abrirConversacionMobile = document.getElementById('conversacionMobileMensaje');
+    abrirConversacionMobile.style.display = 'block';
+
+    let header = document.getElementById('headerMobile');
+    header.style.display = 'none'
+
+    let navChat = document.getElementById('navChatMobile');
+    navChat.style.display = 'none';
+}
+function RechazarMobile (){
+    document.getElementById('chat').style.display='none';
+}
+function RechazarMobile1 (){
+    document.getElementById('chat1').style.display='none';
+}
+function RechazarMobile2 (){
+    document.getElementById('chat2').style.display='none';
+}
+function RechazarMobile3 (){
+    document.getElementById('chat3').style.display='none';
+}
+function RechazarMobile4 (){
+    document.getElementById('chat4').style.display='none';
+}
+function RechazarMobile5 (){
+    document.getElementById('chat5').style.display='none';
+}
+function RechazarMobile6 (){
+    document.getElementById('chat6').style.display='none';
+}
