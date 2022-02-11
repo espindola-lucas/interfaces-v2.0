@@ -51,6 +51,7 @@ body {
     height: 50px;
     border-radius: 50%;
     margin-top: 2%;
+    padding-left: 1%;
 }
 
 .container .listaDeChats .boxMensaje .mensaje > p,
