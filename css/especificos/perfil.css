@@ -56,10 +56,12 @@
 
 .containerPerfil .informacion .gridInformacion .fotos > img {
     width: 130px;
+    height: 100px;
 }
 
 .containerPerfil .informacion .gridInformacion .amigos .boxAmigo > img {
     width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -98,7 +100,7 @@
     }
 
     .muroInicioMobile .headerMobile {
-        margin-top: -96%;
+        margin-top: -97%;
     }
 
     .muroInicioMobile .navMobile {
