@@ -2,7 +2,10 @@ function like1() {
     let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
         document.getElementById("P1").innerHTML = span + 665;
     }
-    
+    function like() {
+        let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
+            document.getElementById("P").innerHTML = span + 665;
+        }
     function like2() {
         let span = "<span  style='color:red' id='like' class='fas fa-heart'></span> "
             document.getElementById("P2").innerHTML = span + 11;
@@ -93,6 +96,17 @@ function like1() {
         }
     }
 
+    let ver = 'si';
+    function  VerComentario (){
+        if (ver == 'si'){
+            document.getElementById('Ver-comentario').style.display='block';
+            return   ver = 'no';
+        }
+        if (ver == 'no'){
+            document.getElementById('Ver-comentario').style.display='none';
+            return ver = 'si';
+        }
+    }
     let ver3 = 'si';
     function  VerComentario3 (){
         if (ver3 == 'si'){

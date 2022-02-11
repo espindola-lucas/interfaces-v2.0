@@ -112,61 +112,65 @@
                     </div>
                 </div>
 
-                <div class="publicaciones"  id="Publicacion-ahora" style="display: none;">
+               <!-- publicaciones de amigos -->
+               <div class="publicaciones" id="Publicacion-ahora" style="display: none;" >
+                <div class="headerPost">
                     <img src="images/perfil1.jpg" alt="">
-                    <h4>Sofia Espindola</h4>
-                    <p>14 de Febrero a las 19:54</p>
-                    <div class="conteinerImg">
-                        <div class="post">
-                            <div class="post">
-                                <p>Nueva Publicacion.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- like, comentar, compartir -->
-                    <div class="opciones">
-                        <p  id="P1" onclick="like1()"><span  id ="like1" class="fas fa-heart"></span> 664 </p>
-                        <p><i  onclick="VerComentario1()" class="fas fa-comment"></i> 498</p>
-                        <a href="muroInicio-compartir.html">
-                            <p><i class="fas fa-share-alt"></i> 168</p>
-                        </a>
-                    </div>
-                    <!-- comentarios en publicaciones -->
-                    <div class="Conteiner-Comentario" id="Ver-comentario1">
-                        <div class="comentarios">
-                            <img src="images/perfil20.jpeg" alt="">
-                            <div class="textoComentario">
-                                <p>Juan Labra</p>
-                                <p>
-                                    Me pareció verlos más de una vez por ahí parece que siempre andan sueltos los dos juntos
-                                </p>
-                            </div>
-                        </div>
-        
-                        <div class="comentarios">
-                            <img src="images/perfil3.jpg" alt="">
-                            <div class="textoComentario">
-                                <p>Marcela Foco</p>
-                                <p>
-                                    Hubo reencuentro,era la del club banco provincia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="comentarios" id="comentario-nuevo1" style="display: none;">
-                            <img src="images/perfil5.jpg" alt="">
-                            <div class="textoComentario">
-                                <p>Marta Uno</p>
-                                <p>
-                                    Comentario nuevo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- input para agregar comentario -->
-                    <div class="comentar">
-                        <input id="input-comentario" onclick="AgregarComentario1()" type="text" placeholder="Agregar un comentario...">
+                    <div class="infoAmigoPost">
+                        <h4>Sofia Espindola</h4>
+                        <p>14 de Febrero a las 19:54</p>
                     </div>
                 </div>
+                <div class="conteinerImg">
+                    <div class="post">
+                        <p>Nueva Publicacion.</p>
+                    </div>
+                </div>
+                <!-- like, comentar, compartir -->
+                <div class="opciones">
+                    <p  id="P" onclick="like()"><span  id ="like1" class="fas fa-heart"></span> 664 </p>
+                    <p><i onclick="VerComentario()" class="fas fa-comment"></i> 498</p>
+                    <a href="muroInicio-compartir.html">
+                        <p><i class="fas fa-share-alt"></i> 168</p>
+                    </a>
+                </div>
+                <!-- comentarios en publicaciones -->
+                <div class="Conteiner-Comentario"id="Ver-comentario">
+                    <div class="comentarios">
+                        <img src="images/perfil13.jpeg" alt="">
+                        <div class="textoComentario">
+                            <p>Alberto Paez</p>
+                            <p>
+                                Lu Fernández ella tiene escribile!
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="comentarios">
+                        <img src="images/perfil102.jpeg" alt="">
+                        <div class="textoComentario">
+                            <p>Natacha Gomez</p>
+                            <p>
+                                Tengo una nena
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comentarios" id="comentario-nuevo2" style="display: none;">
+                        <img src="images/perfil10.jpeg" alt="">
+                        <div class="textoComentario">
+                            <p>Julio Lopez</p>
+                            <p>
+                                Comentario nuevo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- input para agregar comentario -->
+                <div class="comentar">
+                    <input id="input-comentario2"  onclick= "AgregarComentario2()"type="text" placeholder="Agregar un comentario...">
+                </div> 
+            </div>
+
 
                 <!-- publicaciones de amigos -->
                 <div class="publicaciones">
