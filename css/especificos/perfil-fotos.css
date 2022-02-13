@@ -41,6 +41,7 @@
 
 .gridFotos .albunes .album > img {
     width: 150px;
+    height: 100px;
 }
 
 .gridFotos .albunes .album > p {
@@ -56,6 +57,7 @@
 
 .gridFotos .dentroAlbum .fotosAlbum > img {
     width: 120px;
+    height: 120px;
     margin-bottom: 5%;
     cursor: pointer;
 }
@@ -123,6 +125,7 @@
 
     .albunesMobile .albumMobile > img {
         width: 65px;
+        height: 65px;
     }
 
     .albunesMobile .albumMobile > p {
@@ -150,6 +153,7 @@
 
     .dentroAlbumMobile .fotosAlbumMobile > img  {
         width: 65px;
+        height: 65px;
     }
 
     /* .gridFotos .albunes {
