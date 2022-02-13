@@ -52,10 +52,14 @@
     margin-bottom: 2%;
 }
 
-/* .publicidad .datos .datosPublicidad,
+.publicidad .datos .datosPublicidad,
 .publicidad .datos .datosPago {
-    display: none;
-} */
+    width: 300px;
+    border-radius: 5px;
+ background-color: #e2d8e4;
+ padding-left: 4%;
+ padding-bottom: 4%;
+}
 
 .publicidad .datos .datosPublicidad > form > h3,
 .publicidad .datos .datosPago > form > h3 {

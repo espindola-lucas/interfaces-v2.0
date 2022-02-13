@@ -18,7 +18,8 @@
 }
 
 .gridAmigos .amigo .boxAmigo > img {
-    width: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -77,7 +78,8 @@
     }
 
     .amigosMobile .listaAmigosMobile .boxAmigoMobile > img {
-        width: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
     }
 }
