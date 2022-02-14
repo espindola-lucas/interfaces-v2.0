@@ -263,6 +263,11 @@ footer {
         margin-top: 0.1%;
     }
 
+    .notificaciones {
+        margin-top: -67%;
+        margin-left: 900px;
+    }
+
     .container .listaDeChats .boxMensaje .mensaje .infoText  {
         width: 55%;
     }

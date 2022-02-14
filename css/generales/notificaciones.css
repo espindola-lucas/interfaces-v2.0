@@ -48,13 +48,6 @@
 
 /* responsive mobile */
 
-@media only screen and (max-width: 1366px) {
-    .notificaciones {
-        margin-top: -2650px;
-        margin-left: 900px;
-    }
-}
-
 @media only screen and (max-width: 820px) {
     .container {
         display: none;
