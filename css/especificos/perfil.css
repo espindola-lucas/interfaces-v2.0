@@ -102,7 +102,9 @@
     footer {
         display: none;
     }
-
+    .ring {
+        margin-top: 4%;
+    }
     .muroInicioMobile .headerMobile {
         margin-top: -97%;
     }
