@@ -8,6 +8,7 @@ document.getElementById('loader').addEventListener("animationend", function () {
 let url = location.href;
 let separar = url.split("/");
 let urlmensajes;
+let scrollMobileMensajes = window.screen.width;
 
 for(let i = 0; separar.length > i; i++){
     urlmensajes = separar[i];
@@ -31,6 +32,7 @@ function Timer() {
                 n = 0 ;
                 parar = 0;
                 urlmensajes == "mensajes.html" ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll';
+                urlmensajes == "mensajes.html" && scrollMobileMensajes < 400 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'; 
             }
         }
     },1500);
