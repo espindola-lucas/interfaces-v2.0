@@ -32,7 +32,7 @@ function Timer() {
                 n = 0 ;
                 parar = 0;
                 urlmensajes == "mensajes.html" ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll';
-                urlmensajes == "mensajes.html" && scrollMobileMensajes < 400 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden'; 
+                urlmensajes == "mensajes.html" && scrollMobileMensajes < 400 ? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'scroll'; 
             }
         }
     },1500);
